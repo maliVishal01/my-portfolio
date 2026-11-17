@@ -1,1127 +1,757 @@
-<!-- 
-  Mali Vishalkumar Static Portfolio - Single File Web Application
-
-  -- PURPOSE & GUIDANCE --
-  This portfolio has been converted from a dynamic (Firebase) version to a static one. 
-  All content is now managed directly within this HTML file.
-
-  -- HOW TO UPDATE THIS FILE --
-  1. Profile Picture (line 220): Change the URL in the 'src' attribute.
-  2. Resume Links (line 304): Update the href attributes for the 3 resume options.
-  3. Projects (line 602): The image placeholders have been removed.
-  4. Certifications (line 741): Edit the certification list items directly (update the Google Drive links).
-  5. Metrics: Use the comments in the Donut Chart (lines 472-505) and the simple bar chart (lines 532-579) to adjust percentages.
-  6. Links (Hero/Contact): Update the URLs in the <a> tags (LinkedIn, GitHub, Email, etc.).
-
-  -- FEATURES INCLUDED --
-  - Fully static, no backend required.
-  - FINAL FIX CONFIRMED: Highly reliable fix using native CSS `scroll-margin-top` (modern standard) and  JS smooth scroll ensures perfect navigation alignment.
-  - NEW: Main focus areas (70/20/10 split) now visualized using an attractive, easy-to-edit SVG Donut Chart.
-  - NEW: Core Skill Distribution chart replaced with simpler HTML/Tailwind bars for easy editing.
-  - UPDATE: All primary buttons (Resume, LinkedIn, GitHub, Email) use a consistent cyan theme.
-  - NEW: Contact section redesigned into a full, styled card matching the rest of the portfolio's aesthetic.
-  - NEW: Creative "Digital Noise" background effect with Radial Gradient for depth.
-  - NEW: Attractive Resume Dropdown Menu with 3 customizable links.
-  - REMOVED: Dedicated Project Image/Screenshot placeholder.
-  - Fully responsive for mobile and desktop viewing.
-  - Dedicated link placeholders for Profile Picture and Certificate links.
-  - Comprehensive comments for future editing.
--->
-<!-- ================== 🔥 SEO BOOST (UPDATED) ================== -->
-
-<!-- ✅ Title (ADDED - IMPORTANT) -->
-<title>mali vishal | Mali Vishalkumar | DevOps Engineer | Python Developer | Data Analyst Portfolio India | malivishal | mali brijesh </title>
-
-<!-- Enhanced Title Signal -->
-<meta name="title" content="Mali Vishalkumar | mali vishal | mali brijesh | DevOps Engineer | Data Analyst | Python Developer Portfolio India">
-
-<!-- Extended Description -->
-<meta name="description" content="mali vishal Mali Vishalkumar (Mali Vishal) Portfolio – DevOps Engineer, Data Analyst & Python Developer from India. Skilled in AWS, Docker, CI/CD, Jenkins, GitHub Actions, SQL, Power BI, Django, Flask. Explore real-world projects, cloud deployments, and automation systems.">
-
-<!-- 🔥 Expanded Keywords (CLEANED FORMAT) -->
-<meta name="keywords" content="Mali Vishalkumar, Mali Vishal, malivishal, malivishal.in, DevOps Engineer India, Fresher DevOps Engineer India, Data Analyst Portfolio India, Python Developer Portfolio India, AWS DevOps Projects, CI/CD Pipeline Projects, Docker Jenkins GitHub Actions, Cloud Engineer Fresher India, Power BI SQL Developer Portfolio, Entry Level IT Engineer India">
-
-<!-- ✅ Canonical (ADDED - VERY IMPORTANT) -->
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ================= SEO MAINTENANCE NOTES =================
+     Keep title, description, canonical URL and social preview metadata
+     aligned with the visible page content. Keep the old keyword list for
+     reference, but do not keyword-stuff page content. Google mainly relies
+     on useful visible content, links, crawlability and page quality.
+     Update Person/Website JSON-LD only when public facts or profile URLs change.
+     =============================================================== -->
+<!-- ================= SEO (existing keyword list retained) ================= -->
+<title>Mali Vishalkumar | DevOps &amp; Cloud Engineer Portfolio | Ahmedabad, India</title>
+<meta name="title" content="Mali Vishalkumar | DevOps &amp; Cloud Engineer Portfolio | Ahmedabad, India">
+<meta name="description" content="Explore Mali Vishalkumar’s portfolio in Ahmedabad, India: DevOps, AWS cloud infrastructure, CI/CD, Docker, Jenkins, Python backend projects, SQL, Power BI and certifications.">
+<meta name="keywords" content="Mali Vishalkumar, Mali Vishal, malivishal, malivishal.in, mali brijesh, DevOps Engineer India, Fresher DevOps Engineer India, DevOps Engineer Ahmedabad, Data Analyst Portfolio India, Python Developer Portfolio India, Python Developer Ahmedabad, AWS DevOps Projects, CI/CD Pipeline Projects, Docker Jenkins GitHub Actions, Cloud Engineer Fresher India, Power BI SQL Developer Portfolio, Entry Level IT Engineer India, Software Engineer Fresher India, Linux Prometheus Grafana SonarQube Trivy, MSc IT MSU Baroda">
+<meta name="application-name" content="Mali Vishalkumar Portfolio">
+<meta name="subject" content="DevOps Engineering, Cloud Infrastructure, Python Development and Data Analytics">
+<meta name="category" content="Professional Portfolio">
+<meta name="format-detection" content="telephone=no">
+<meta property="profile:first_name" content="Mali">
+<meta property="profile:last_name" content="Vishalkumar">
+<meta property="og:see_also" content="https://www.linkedin.com/in/mali-vishal-devops">
+<meta property="og:see_also" content="https://github.com/maliVishal01">
+<link rel="me" href="https://www.linkedin.com/in/mali-vishal-devops">
+<link rel="me" href="https://github.com/maliVishal01">
+<meta name="author" content="Mali Vishalkumar">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://malivishal.in/">
-
-<!-- 🔥 GEO SEO -->
-<meta name="geo.region" content="IN-GJ">
-<meta name="geo.placename" content="Ahmedabad, Gujarat, India">
-<meta name="geo.position" content="23.0225;72.5714">
-<meta name="ICBM" content="23.0225, 72.5714">
-
-<!-- Robots -->
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="googlebot" content="index, follow">
-
-<!-- ✅ Open Graph (ADDED - SOCIAL SEO) -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mali Vishalkumar | DevOps Engineer Portfolio">
-<meta property="og:title" content="Mali Vishal  | python developer Portfolio">
-<meta property="og:description" content="DevOps Engineer | Python Developer | Data Analyst Portfolio with AWS, Docker, CI/CD projects">
-<meta property="og:url" content="https://malivishal.in/">
-<meta property="og:image" content="https://malivishal.in/preview-image.jpg">
-
-<!-- ✅ Twitter SEO -->
+<link rel="alternate" hreflang="en-IN" href="https://malivishal.in/">
+<meta name="geo.region" content="IN-GJ"><meta name="geo.placename" content="Ahmedabad, Gujarat, India">
+<meta name="geo.position" content="23.0225;72.5714"><meta name="ICBM" content="23.0225, 72.5714">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"><meta name="googlebot" content="index, follow">
+<!-- Search Console: paste your verification tag here -->
+<!-- <meta name="google-site-verification" content="YOUR_CODE"> -->
+<meta property="og:type" content="website"><meta property="og:site_name" content="Mali Vishalkumar Portfolio">
+<meta property="og:locale" content="en_IN"><meta property="og:url" content="https://malivishal.in/">
+<meta property="og:title" content="Mali Vishalkumar | DevOps &amp; Cloud Engineer Portfolio">
+<meta property="og:description" content="Explore Mali Vishalkumar’s DevOps, AWS cloud, CI/CD, Python backend and data analytics work in Ahmedabad, India.">
+<meta property="og:image" content="https://malivishal.in/preview-image.jpg"><meta property="og:image:alt" content="Mali Vishalkumar portfolio preview">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mali Vishalkumar | DevOps Engineer Portfolio">
-<meta name="twitter:title" content="Mali Vishal | python developer">
-<meta name="twitter:description" content="AWS, Docker, CI/CD, Python Developer Portfolio">
+<meta name="twitter:title" content="Mali Vishalkumar | DevOps &amp; Cloud Engineer Portfolio">
+<meta name="twitter:description" content="DevOps, AWS cloud, CI/CD, Python backend development and data analytics portfolio by Mali Vishalkumar.">
 <meta name="twitter:image" content="https://malivishal.in/preview-image.jpg">
+<meta name="theme-color" content="#f7f7f5">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//github.com"><link rel="dns-prefetch" href="//linkedin.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<!-- Structured data: Person (LinkedIn updated) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Mali Vishalkumar Kantilal","alternateName":["Mali Vishal","malivishal","Mali Vishalkumar"],
+"url":"https://malivishal.in/","image":"https://malivishal.in/preview-image.jpg","email":"mailto:Malivishal28711@gmail.com",
+"description":"DevOps and cloud engineering portfolio featuring AWS infrastructure, CI/CD automation, Docker, Jenkins, Python backend development and data analytics.",
+"jobTitle":"DevOps Engineer",
+"hasOccupation":[{"@type":"Occupation","name":"DevOps Engineer"},{"@type":"Occupation","name":"Python Developer"},{"@type":"Occupation","name":"Data Analyst"}],
+"worksFor":{"@type":"Organization","name":"Lintel Technologies Pvt. Ltd."},
+"alumniOf":[{"@type":"CollegeOrUniversity","name":"Maharaja Sayajirao University of Baroda"},{"@type":"CollegeOrUniversity","name":"Hemchandracharya North Gujarat University"}],
+"sameAs":["https://github.com/maliVishal01","https://www.linkedin.com/in/mali-vishal-devops","https://malivishal.in/"],
+"knowsAbout":["DevOps Engineering","Cloud Infrastructure","Amazon Web Services (AWS)","CI/CD","Docker","Jenkins","GitHub Actions","Linux","Networking","Prometheus","Grafana","SonarQube","Trivy","Python","Django","Flask","REST APIs","SQL","MySQL","Power BI","Excel","Data Analytics"],
+"address":{"@type":"PostalAddress","addressLocality":"Ahmedabad","addressRegion":"Gujarat","addressCountry":"India"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Mali Vishalkumar Portfolio","url":"https://malivishal.in/","inLanguage":"en-IN","author":{"@type":"Person","name":"Mali Vishalkumar"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfilePage","dateModified":"2026-11-17","mainEntity":{"@type":"Person","name":"Mali Vishalkumar","url":"https://malivishal.in/"}}
+</script>
+<style>
+/* ============ THEME COLORS: change here ============ */
+:root{--bg:#f5f5f4;--card:#ffffff;--line:#e5e5e5;--tx:#171719;--mut:#66666d;--c1:#4b0811;--c2:#585a60;--c3:#9a303d;--hd:72px}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}section[id]{scroll-margin-top:var(--hd)}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+/* animated background blobs */
+.bg i{position:fixed;width:42vw;height:42vw;border-radius:50%;filter:blur(110px);opacity:.28;z-index:-1;animation:fl 18s ease-in-out infinite alternate}
+.bg i:nth-child(1){background:var(--c1);top:-12%;left:-10%}.bg i:nth-child(2){background:var(--c2);bottom:-15%;right:-10%;animation-delay:-6s}
+@keyframes fl{to{transform:translate(8vw,6vh) scale(1.2)}}
+/* scrollbar + progress */
+::-webkit-scrollbar{width:9px}::-webkit-scrollbar-track{background:#0b1222}::-webkit-scrollbar-thumb{background:linear-gradient(var(--c1),var(--c2));border-radius:6px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3));z-index:100}
+.wrap{max-width:1150px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:rgba(7,11,22,.75);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand,.grad{background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+.brand{font-size:1.3rem}nav ul{display:flex;gap:6px;list-style:none;padding:0}
+nav a.l{padding:6px 12px;border-radius:99px;font-size:.88rem;color:var(--mut);transition:.25s}nav a.l:hover,nav a.l.on{color:#fff;background:var(--card)}
+#burger{display:none;background:none;border:1px solid var(--line);color:#fff;border-radius:8px;padding:6px 10px;font-size:1.1rem}
+@media(max-width:860px){#burger{display:block}nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:#0b1222;padding:12px 20px}nav ul.open{display:flex}}
+/* buttons + dropdown */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:12px;font-weight:600;border:0;cursor:pointer;font:inherit;font-weight:600;color:#06121c;background:linear-gradient(135deg,var(--c1),#67e8f9);box-shadow:0 6px 22px rgba(34,211,238,.3);transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(34,211,238,.55)}.btn.o{background:var(--card);color:var(--tx);border:1px solid var(--line);box-shadow:none}
+.dd{position:relative;display:inline-block}.menu{display:none;position:absolute;right:0;top:calc(100% + 8px);width:330px;max-width:92vw;background:#0f172a;border:1px solid var(--line);border-radius:14px;padding:8px;z-index:60;box-shadow:0 20px 50px #000a;text-align:left}
+.menu.show{display:block;animation:pop .2s}@keyframes pop{from{opacity:0;transform:translateY(-6px)}}
+.menu .h{font-size:.7rem;color:var(--mut);text-transform:uppercase;padding:4px 10px}
+.ri{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:9px 10px;border-radius:10px;font-size:.88rem}.ri:hover{background:var(--card)}
+.ri span a{margin-left:6px;padding:3px 10px;border-radius:8px;font-size:.75rem;border:1px solid var(--c1);color:var(--c1)}.ri span a.d{background:var(--c1);color:#06121c}
+.ri.off{opacity:.45}
+/* hero */
+.hero{text-align:center;padding:70px 0 50px}
+.ava{width:150px;height:150px;border-radius:50%;margin:0 auto 22px;padding:4px;background:conic-gradient(var(--c1),var(--c2),var(--c3),var(--c1));animation:sp 6s linear infinite}
+.ava img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:4px solid var(--bg);animation:sp 6s linear infinite reverse}@keyframes sp{to{transform:rotate(360deg)}}
+h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:800;line-height:1.1;margin-bottom:12px}
+.role{font-size:clamp(1.1rem,2.6vw,1.6rem);color:var(--mut);min-height:2.2rem}.role b{color:var(--c1)}.role u{display:inline-block;width:2px;height:1.2em;background:var(--c1);vertical-align:middle;animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}
+.sub{max-width:820px;margin:14px auto 28px;color:var(--mut)}.row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:40px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}.stat b{display:block;font-size:2rem}
+/* sections + cards */
+section{padding:46px 0}h2{font-size:2rem;font-weight:800;margin-bottom:26px;display:inline-block;border-bottom:4px solid var(--c3);padding-bottom:4px}
+.g{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}.g2{display:grid;gap:20px;grid-template-columns:2fr 1fr}@media(max-width:860px){.g2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;backdrop-filter:blur(8px);transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--c1);box-shadow:0 14px 34px rgba(34,211,238,.18)}
+.card h3{color:var(--c1);font-size:1.15rem;margin-bottom:6px}.mut{color:var(--mut);font-size:.92rem}.am{color:var(--c3);font-size:.85rem;font-weight:600}
+.edu{border-left:4px solid var(--c3);padding-left:14px;margin-bottom:16px}
+.chip{display:inline-block;font-size:.74rem;padding:3px 11px;margin:3px 4px 3px 0;border-radius:99px;border:1px solid rgba(251,191,36,.5);color:var(--c3);background:rgba(251,191,36,.08)}
+ul.dot{padding-left:18px;color:var(--mut);font-size:.9rem}ul.dot li{margin:5px 0}
+.bars .bar{margin:14px 0}.bar div.t{display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:5px}
+.bar .tr{height:10px;background:#1e293b;border-radius:99px;overflow:hidden}.bar .f{height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--c1),var(--c2));transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.fb{padding:7px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--mut);cursor:pointer;font:inherit;font-size:.85rem}.fb.on,.fb:hover{background:var(--c1);color:#06121c;border-color:var(--c1)}
+.lnk{display:inline-block;margin:10px 14px 0 0;color:var(--c1);font-weight:600;font-size:.9rem}.lnk:hover{color:#fff}
+.cert{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.cert b{color:var(--c1)}.cert small{color:var(--mut)}
+.contact{text-align:center}.contact h3{font-size:1.8rem;margin-bottom:10px}
+footer{border-top:1px solid var(--line);text-align:center;color:var(--mut);padding:22px;font-size:.85rem;margin-top:30px}
+#top{position:fixed;right:20px;bottom:22px;width:44px;height:44px;border-radius:50%;border:0;background:var(--c1);color:#06121c;font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:70}#top.show{opacity:1;pointer-events:auto}
+/* scroll reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 
-<!-- Theme Color -->
-<meta name="theme-color" content="#0f172a">
+/* Distinct social colors */
+.btn.social{box-shadow:none;border:1px solid transparent;color:#fff}
+.btn.social.email{background:#b45309;border-color:#f59e0b}
+.btn.social.linkedin{background:#0a66c2;border-color:#3b9cff}
+.btn.social.github{background:#24292f;border-color:#8b949e}
+.btn.social:hover{filter:brightness(1.15);transform:translateY(-3px)}
+.name-link{display:inline-flex;align-items:center;gap:5px;padding:5px 11px!important;border-radius:8px;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.55)!important;color:#7dd3fc!important}
+.name-link:hover{background:rgba(56,189,248,.2)}
+/* Animated cloud and network layer */
+.network-scene{position:absolute;inset:64px 0 auto;height:440px;overflow:hidden;pointer-events:none;z-index:-1;opacity:.65}
+.cloud{position:absolute;width:150px;height:52px;border:1px solid rgba(56,189,248,.45);border-radius:50px;background:linear-gradient(135deg,rgba(14,165,233,.12),rgba(129,140,248,.08));filter:drop-shadow(0 0 18px rgba(56,189,248,.2));animation:cloud-drift 18s ease-in-out infinite alternate}
+.cloud:before,.cloud:after,.cloud span{content:"";position:absolute;border:1px solid rgba(56,189,248,.4);border-bottom:0;background:rgba(10,20,40,.75);border-radius:50%}
+.cloud:before{width:55px;height:55px;left:24px;top:-28px}.cloud:after{width:72px;height:72px;left:60px;top:-40px}.cloud span:nth-child(1){width:38px;height:38px;left:100px;top:-17px}.cloud span:nth-child(2){display:none}.cloud span:nth-child(3){display:none}
+.cloud-a{top:90px;left:8%}.cloud-b{top:220px;right:8%;transform:scale(.75);animation-delay:-8s}
+@keyframes cloud-drift{to{translate:35px -14px}}
+.network-lines{position:absolute;inset:0;background-image:linear-gradient(30deg,transparent 49.7%,rgba(56,189,248,.16) 50%,transparent 50.3%),linear-gradient(150deg,transparent 49.7%,rgba(167,139,250,.14) 50%,transparent 50.3%);background-size:220px 150px;mask-image:linear-gradient(to bottom,transparent,black 20%,black 75%,transparent);animation:network-shift 24s linear infinite}
+@keyframes network-shift{to{background-position:220px 150px}}
+.node,.packet{position:absolute;border-radius:50%;background:#67e8f9;box-shadow:0 0 12px #22d3ee}
+.node{width:6px;height:6px;animation:pulse-node 2.5s infinite}.n1{top:18%;left:28%}.n2{top:52%;left:65%;animation-delay:.5s}.n3{top:32%;right:22%;animation-delay:1s}.n4{top:72%;left:43%;animation-delay:1.5s}
+.packet{width:4px;height:4px;animation:packet-flow 7s linear infinite}.p1{top:30%;left:20%}.p2{top:58%;left:48%;animation-delay:-2s}.p3{top:40%;left:78%;animation-delay:-4s}
+@keyframes pulse-node{50%{opacity:.25;transform:scale(2.2)}}
+@keyframes packet-flow{0%{transform:translate(0,0);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translate(130px,55px);opacity:0}}
+/* Redesigned insight cards */
+.insight-intro{color:var(--mut);margin:-12px 0 22px;max-width:680px}
+.insight-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.insight-card{position:relative;overflow:hidden;padding:21px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025));min-height:205px;transition:.3s}
+.insight-card:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-45px;top:-50px;background:var(--accent);opacity:.12;filter:blur(2px)}
+.insight-card:hover{transform:translateY(-5px);border-color:var(--accent);box-shadow:0 12px 30px color-mix(in srgb,var(--accent) 18%,transparent)}
+.insight-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.insight-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent);font-size:1.35rem}
+.insight-kicker{font-size:.65rem;letter-spacing:.12em;color:var(--mut);font-weight:700}
+.insight-card h3{font-size:1rem;color:var(--tx);margin-bottom:5px}
+.insight-value{font-size:2.15rem;font-weight:800;line-height:1.2;color:var(--accent)}
+.insight-value span{font-size:1rem}
+.insight-track{height:7px;background:rgba(148,163,184,.18);border-radius:99px;overflow:hidden;margin:12px 0}
+.insight-track i{display:block;height:100%;width:0;border-radius:99px;background:var(--accent);transition:width 1.3s ease}
+.insight-card p{font-size:.78rem;color:var(--mut)}
+.insight-cloud{--accent:#38bdf8}.insight-python{--accent:#a78bfa}.insight-data{--accent:#34d399}.insight-systems{--accent:#fb923c}.insight-bi{--accent:#f472b6}
+@media(max-width:600px){.network-scene{opacity:.35}.cloud-a{left:-30px}.cloud-b{right:-50px}.insight-grid{grid-template-columns:1fr 1fr}.insight-card{padding:15px;min-height:190px}}
+@media(max-width:420px){.insight-grid{grid-template-columns:1fr}}
 
-<!-- Performance Boost -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="//github.com">
-<link rel="dns-prefetch" href="//linkedin.com">
 
-<!-- 🔥 ADVANCED STRUCTURED DATA (FIXED DOMAIN) -->
+/* Minimal corporate visual direction inspired by Lintel's restrained layout */
+body{background:var(--bg);color:var(--tx)}
+header{background:rgba(245,245,244,.94);border-bottom:1px solid #e5e5e5;backdrop-filter:blur(12px)}
+.brand,.grad{background:none;color:#4b0811;-webkit-text-fill-color:#4b0811}
+nav a.l{color:#55555b}nav a.l:hover,nav a.l.on{color:#4b0811;background:#ece9e8}
+.btn{background:#4b0811;color:#fff;box-shadow:none;border-radius:5px}
+.btn:hover{background:#6a111d;box-shadow:none}
+.btn.o{background:transparent;color:#4b0811;border:1px solid #4b0811}
+.hero{text-align:left;padding:88px 0 58px;max-width:1000px;margin:auto}
+.hero .ava{margin:0 0 24px;width:118px;height:118px;background:#4b0811;animation:none}
+.hero .ava img{animation:none;border-color:var(--bg)}
+.hero .sub{margin:16px 0 26px;max-width:760px}
+.hero .row{justify-content:flex-start}
+h2{border-bottom:2px solid #4b0811;padding-bottom:8px;font-size:1.8rem}
+.card,.stat{background:#fff;border:1px solid #e7e5e4;box-shadow:0 4px 18px rgba(20,15,15,.035);backdrop-filter:none;border-radius:8px}
+.card:hover{transform:translateY(-3px);border-color:#b7a6a8;box-shadow:0 8px 22px rgba(20,15,15,.07)}
+.card h3{color:#4b0811}
+.chip{border:1px solid #ded8d8;color:#4b0811;background:#f7f4f4}
+.edu{border-left-color:#4b0811}
+.insight-intro{margin:-12px 0 22px;color:#66666d}
+.minimal-insights{max-width:850px;padding:26px 30px}
+.minimal-insights .bar{margin:18px 0}
+.minimal-insights .bar .t{color:#343438}
+.minimal-insights .bar .t b{color:#4b0811}
+.minimal-insights .bar .tr{height:6px;background:#eeebeb;border-radius:2px}
+.minimal-insights .bar .f{background:#4b0811;border-radius:2px}
+.resume-list{max-width:850px;border-top:1px solid #e5e5e5}
+.resume-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:17px 4px;border-bottom:1px solid #e5e5e5}
+.resume-row>span:first-child{font-weight:600;color:#252529}
+.resume-open{font-size:.9rem;font-weight:700;color:#4b0811;border-bottom:1px solid #4b0811;padding:4px 0}
+.resume-open:hover{color:#8b2431}
+.resume-soon{font-size:.82rem}
+.contact-links .email{background:#4b0811;border-color:#4b0811}
+.contact-links .linkedin{background:#fff;color:#0a66c2;border-color:#0a66c2}
+.contact-links .github{background:#24292f;color:#fff;border-color:#24292f}
+footer{border-top:1px solid #e5e5e5}
+#top{background:#4b0811;color:#fff}
+.bg i{opacity:.06;filter:blur(125px)}
+.network-scene{opacity:.13}
+.cloud{border-color:rgba(75,8,17,.25);background:rgba(75,8,17,.025);filter:none}
+.cloud:before,.cloud:after,.cloud span{border-color:rgba(75,8,17,.2);background:rgba(245,245,244,.65)}
+.network-lines{opacity:.35}
+.node,.packet{background:#7d2630;box-shadow:none}
+@media(max-width:860px){.hero{text-align:center;padding:58px 0 42px}.hero .ava{margin:0 auto 22px}.hero .sub{margin:14px auto 24px}.hero .row{justify-content:center}}
+@media(max-width:600px){.resume-row{align-items:flex-start}.minimal-insights{padding:20px}}
+
+
+/* ===== Final UI system: consistent, accessible and responsive ===== */
+:root{
+  --bg:#f7f7f5;
+  --surface:#ffffff;
+  --surface-soft:#f1f1ee;
+  --line:#deded9;
+  --tx:#202124;
+  --mut:#555960;
+  --c1:#641b28;
+  --c2:#30343b;
+  --c3:#8a3440;
+  --focus:#1d4ed8;
+  --hd:72px;
+}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hd) + 18px)}
+body{background:var(--bg);color:var(--tx);font-size:16px;line-height:1.7}
+.wrap{width:min(1160px,100%);padding-inline:clamp(18px,4vw,42px)}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+header{background:rgba(247,247,245,.97);border-bottom:1px solid var(--line);box-shadow:0 2px 12px rgba(32,33,36,.035)}
+.nav{min-height:72px;height:auto;gap:20px}
+.brand,.grad{background:none!important;color:var(--c1)!important;-webkit-text-fill-color:var(--c1);font-weight:800}
+.brand{font-size:1.12rem;letter-spacing:-.025em;white-space:nowrap}
+nav ul{align-items:center;gap:5px}
+nav a.l{display:inline-flex;align-items:center;min-height:42px;padding:8px 13px;color:#45484e;border-radius:5px;font-weight:600}
+nav a.l:hover,nav a.l.on{color:var(--c1);background:#eee9e8}
+#burger{color:var(--tx);border:1px solid #b9b9b4;background:#fff;min-width:44px;min-height:44px}
+@media(max-width:860px){
+  nav ul{top:72px;background:#fff;border:1px solid var(--line);box-shadow:0 12px 24px rgba(20,20,20,.1);padding:12px 18px}
+  nav ul li{width:100%}nav a.l{width:100%}
+}
+.hero{position:relative;isolation:isolate;overflow:hidden;text-align:left;padding:clamp(58px,8vw,100px) 0 clamp(42px,6vw,70px);min-height:530px}
+.hero>*:not(.network-scene){position:relative;z-index:2}
+.hero .ava{width:112px;height:112px;margin:0 0 25px;padding:3px;background:var(--c1);animation:none}
+.hero .ava img{border:3px solid var(--bg);animation:none}
+h1{max-width:850px;color:#202124;font-size:clamp(2.5rem,6.5vw,4.7rem);line-height:1.08;letter-spacing:-.045em;margin-bottom:15px}
+.role{color:#45484e;font-size:clamp(1.05rem,2.2vw,1.4rem);font-weight:600;min-height:2.1rem}
+.role b{color:var(--c1)}
+.sub{max-width:760px;margin:16px 0 28px;color:#4e5359;font-size:1.04rem;line-height:1.8}
+.hero .row{justify-content:flex-start;align-items:center;gap:12px}
+.btn{min-height:46px;padding:11px 19px;border-radius:5px;background:var(--c1);color:#fff;border:1px solid var(--c1);box-shadow:none;font-size:.94rem;font-weight:700;letter-spacing:.005em}
+.btn:hover{background:#4d111c;border-color:#4d111c;transform:translateY(-2px);box-shadow:0 5px 14px rgba(100,27,40,.16)}
+.btn.o{background:#fff;color:var(--c1);border:1px solid #a77b81}
+.btn.o:hover{background:#f4eeee}
+.btn.social{min-height:44px}
+.btn.social.email{background:#fff;color:#7a2714;border-color:#b87968}
+.btn.social.linkedin{background:#0a66c2;color:#fff;border-color:#0a66c2}
+.btn.social.github{background:#24292f;color:#fff;border-color:#24292f}
+.dd{position:relative}
+.resume-trigger{gap:10px}
+.chevron{font-size:1.15rem;line-height:1;transition:transform .2s}
+.resume-trigger[aria-expanded="true"] .chevron{transform:rotate(180deg)}
+.menu.resume-menu{display:none;position:absolute;left:0;right:auto;top:calc(100% + 9px);width:min(360px,calc(100vw - 36px));max-width:calc(100vw - 36px);padding:9px;background:#fff;border:1px solid #d9d9d4;border-radius:7px;box-shadow:0 16px 38px rgba(25,25,25,.16);z-index:100;text-align:left}
+.menu.resume-menu.show{display:block;animation:menu-in .16s ease-out}
+@keyframes menu-in{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.name-link{display:inline-flex;align-items:center;min-height:38px;padding:7px 12px!important;border-radius:4px!important;background:#f3eeee!important;border:1px solid #b99da1!important;color:#641b28!important;font-weight:700}
+.name-link:hover{background:#eae0e1!important;color:#45121b!important}
+.resume-menu-heading{padding:8px 10px 10px;color:#656970;font-size:.72rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.resume-menu-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 11px;border-radius:4px;color:#24262a;font-size:.88rem;font-weight:600;line-height:1.4}
+.resume-menu-item:hover{background:#f4eeee;color:var(--c1)}
+.download-mark{flex:0 0 28px;display:grid;place-items:center;width:28px;height:28px;border-radius:4px;background:#f0e7e8;color:var(--c1);font-size:1.1rem}
+.resume-menu-item.unavailable{color:#73777d;cursor:not-allowed}
+.resume-menu-item small{font-size:.72rem;font-weight:500;color:#73777d;white-space:nowrap}
+.stats{gap:14px;margin-top:45px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:6px;padding:17px 19px}
+.stat b{color:var(--c1);font-size:1.85rem}
+section{padding:clamp(42px,6vw,68px) 0}
+section h2{display:block;width:fit-content;max-width:100%;margin:0 0 25px;padding:0 0 10px;border:0;border-bottom:2px solid var(--c1);color:#202124;font-size:clamp(1.65rem,3vw,2.1rem);line-height:1.25;letter-spacing:-.025em}
+.g{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.g2{gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:clamp(18px,2.5vw,25px);box-shadow:0 3px 12px rgba(32,33,36,.035);backdrop-filter:none;transition:border-color .2s,box-shadow .2s}
+.card:hover{transform:none;border-color:#b9a4a7;box-shadow:0 7px 20px rgba(32,33,36,.07)}
+.card h3{color:var(--c1);font-size:1.08rem;line-height:1.4}
+.mut{color:#555960;font-size:.94rem}
+.am{color:#6e2933;font-size:.86rem;font-weight:700}
+.edu{border-left:3px solid var(--c1)}
+.chip{background:#f3eeee;border:1px solid #dfcfd1;color:#54202a;font-size:.76rem;font-weight:600;padding:4px 10px;border-radius:3px}
+ul.dot{color:#50555b;line-height:1.65}
+.filters{gap:8px}
+.fb{min-height:40px;padding:8px 15px;background:#fff;border:1px solid #c9c9c3;color:#3f4349;border-radius:4px;font-weight:600}
+.fb.on,.fb:hover{background:var(--c1);border-color:var(--c1);color:#fff}
+.lnk{color:#6b1c29}
+.lnk:hover{color:#3f1018;text-decoration:underline}
+.cert{align-items:center}
+.cert b{color:#27292d}
+.cert small{color:#5d6268}
+.insight-intro{max-width:760px;margin:-10px 0 24px;color:#53585e;font-size:.98rem;line-height:1.7}
+.rv{opacity:1;transform:none}
+.focus-list{max-width:960px;border-top:1px solid var(--line)}
+.focus-row{display:grid;grid-template-columns:54px minmax(0,1fr);gap:18px;padding:21px 4px;border-bottom:1px solid var(--line);align-items:start}
+.focus-symbol{display:grid;place-items:center;width:46px;height:46px;background:#eee7e7;border:1px solid #e0d0d2;border-radius:5px;color:var(--c1);font-size:1.1rem;font-weight:800}
+.focus-copy h3{margin:0 0 4px;color:#282a2e;font-size:1.02rem}
+.focus-copy p{margin:0 0 10px;color:#555a60;font-size:.92rem;line-height:1.65}
+.focus-tags{display:flex;flex-wrap:wrap;gap:7px}
+.focus-tags span{display:inline-flex;align-items:center;padding:4px 9px;background:#fff;border:1px solid #deded9;border-radius:3px;color:#45494f;font-size:.76rem;font-weight:600}
+.resume-list{max-width:900px;border-top:1px solid var(--line)}
+.resume-row{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:17px 5px;border-bottom:1px solid var(--line)}
+.resume-name{color:#27292d;font-weight:700}
+.resume-open{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 13px;border:1px solid #9f777d;border-radius:4px;color:var(--c1);font-size:.85rem;font-weight:700;white-space:nowrap}
+.resume-open:hover{background:#f2e9ea;border-color:var(--c1)}
+.resume-soon{color:#666b70;font-size:.85rem}
+.contact{text-align:center}
+.contact h3{color:#24262a;font-size:clamp(1.5rem,3vw,1.9rem)}
+.contact .mut{color:#555960}
+.contact-links{gap:12px}
+footer{border-top:1px solid var(--line);color:#555960;background:#f1f1ee}
+#top{background:var(--c1);color:#fff;box-shadow:0 4px 12px rgba(0,0,0,.16)}
+#top.show{opacity:1;pointer-events:auto}
+#bar{background:var(--c1);height:3px}
+::-webkit-scrollbar{width:9px}
+::-webkit-scrollbar-track{background:#eeefed}
+::-webkit-scrollbar-thumb{background:#8a5960;border-radius:8px}
+.bg{display:none}
+.network-scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none;z-index:0;opacity:.8}
+.network-lines{position:absolute;inset:0;background-image:linear-gradient(30deg,transparent 49.7%,rgba(100,27,40,.11) 50%,transparent 50.3%),linear-gradient(150deg,transparent 49.7%,rgba(100,27,40,.09) 50%,transparent 50.3%);background-size:190px 145px;mask-image:linear-gradient(to bottom,transparent 2%,#000 24%,#000 76%,transparent 100%);animation:network-shift 32s linear infinite}
+.cloud{width:132px;height:46px;border:1px solid rgba(100,27,40,.23);border-radius:40px;background:rgba(255,255,255,.42);filter:none;animation:cloud-drift 22s ease-in-out infinite alternate}
+.cloud:before,.cloud:after,.cloud span{border:1px solid rgba(100,27,40,.2);border-bottom:0;background:#f7f7f5}
+.cloud:before{width:45px;height:45px;left:22px;top:-23px}
+.cloud:after{width:57px;height:57px;left:53px;top:-32px}
+.cloud span:nth-child(1){width:32px;height:32px;left:89px;top:-13px}
+.cloud-a{top:75px;left:5%}
+.cloud-b{top:245px;right:7%;transform:scale(.78);animation-delay:-9s}
+.node,.packet{background:#7c3440;box-shadow:0 0 0 4px rgba(100,27,40,.08)}
+.node{width:6px;height:6px}
+.packet{width:4px;height:4px;animation-duration:10s}
+.n1{top:18%;left:29%}.n2{top:53%;left:65%}.n3{top:30%;right:20%}.n4{top:76%;left:45%}
+.p1{top:31%;left:20%}.p2{top:58%;left:48%}.p3{top:42%;left:77%}
+@keyframes cloud-drift{to{transform:translate(18px,-8px)}}
+@media(max-width:860px){
+  .hero{min-height:0;text-align:center;padding:58px 0 45px}
+  .hero .ava{margin:0 auto 22px}
+  .hero .sub{margin:16px auto 25px}
+  .hero .row{justify-content:center}
+  .network-scene{opacity:.55}
+}
+@media(max-width:600px){
+  .wrap{padding-inline:18px}
+  .nav{min-height:66px}
+  .hero{padding:48px 0 38px}
+  h1{font-size:clamp(2.2rem,11vw,3.2rem)}
+  .hero .row{align-items:stretch;flex-direction:column}
+  .hero .row>*{width:100%}
+  .hero .row .btn{justify-content:center;width:100%}
+  .resume-dropdown{width:100%}
+  .menu.resume-menu{left:0;right:0;width:100%;max-width:100%}
+  .resume-row{align-items:flex-start;flex-direction:column;gap:10px}
+  .resume-open{width:100%;justify-content:center}
+  .focus-row{grid-template-columns:42px minmax(0,1fr);gap:12px;padding:17px 0}
+  .focus-symbol{width:38px;height:38px;font-size:1rem}
+  .contact-links{flex-direction:column}
+  .contact-links .btn{width:100%;justify-content:center}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+
+
+/* ============================================================
+   FINAL COMPONENT POLISH
+   Keep all repeated components aligned through shared rules.
+   ============================================================ */
+.hero-actions{display:flex;align-items:center;justify-content:flex-start;gap:12px;flex-wrap:wrap}
+.hero-actions .btn{min-width:185px;justify-content:center}
+.resume-jump{background:#fff!important;color:#641b28!important;border:1px solid #9f777d!important}
+.resume-jump:hover{background:#f2e9ea!important}
+.cert{display:grid!important;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px;min-height:142px}
+.cert-info{min-width:0}
+.cert-info h3{margin:0 0 7px;color:#27292d;font-size:1.05rem;line-height:1.5;overflow-wrap:anywhere}
+.cert-info p{margin:0;color:#555960;font-size:.9rem}
+.cert-action{display:flex;justify-content:flex-end;align-items:center;min-width:158px}
+.cert-action .name-link{display:inline-flex;justify-content:center;align-items:center;gap:7px;min-width:150px;min-height:44px;padding:9px 14px!important;border-radius:4px!important;background:#f3eeee!important;border:1px solid #b99da1!important;color:#641b28!important;font-size:.88rem;font-weight:700;white-space:nowrap}
+.cert-action .name-link:hover{background:#eae0e1!important;border-color:#641b28!important}
+#cert-list{align-items:stretch}
+#cert-list .cert{height:100%}
+.resume-details{display:flex;flex-direction:column;gap:3px}
+.resume-format{font-size:.78rem;color:#666b70}
+.resume-row{min-height:76px}
+.contact.card{background:#fff;border:1px solid #deded9;box-shadow:0 4px 16px rgba(32,33,36,.045)}
+.contact-links{display:flex;justify-content:center;align-items:stretch;gap:12px}
+.contact-links .btn{min-width:160px;min-height:48px;justify-content:center;border-radius:5px;font-weight:700}
+.contact-links .email{background:#641b28!important;border-color:#641b28!important;color:#fff!important}
+.contact-links .email:hover{background:#4d111c!important}
+.contact-links .linkedin{background:#0a66c2!important;border-color:#0a66c2!important;color:#fff!important}
+.contact-links .linkedin:hover{background:#084f98!important}
+.contact-links .github{background:#24292f!important;border-color:#24292f!important;color:#fff!important}
+.contact-links .github:hover{background:#111418!important}
+#contact .contact>p:last-child b{color:#641b28}
+@media(max-width:700px){
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn{width:100%;min-width:0}
+  .cert{grid-template-columns:minmax(0,1fr);gap:14px;min-height:0}
+  .cert-action{justify-content:flex-end;min-width:0}
+  .cert-action .name-link{min-width:150px}
+  .contact-links{flex-direction:column}
+  .contact-links .btn{width:100%}
+}
+
+
+/* ============================================================
+   ACCESSIBILITY + COLOUR CONSISTENCY (maintenance notes)
+   Palette rule: charcoal = primary text, grey = supporting text,
+   burgundy = accent/action, white = surfaces, soft grey = borders.
+   Keep this same hierarchy across Skills, Technical Focus and Contact.
+   ============================================================ */
+#skills .card h3,
+#data-viz .focus-copy h3{color:#202124!important}
+#skills .chip{
+  color:#5a202b!important;
+  background:#f4eded!important;
+  border:1px solid #dfcdd0!important;
+  border-radius:4px!important;
+  font-weight:600;
+}
+#skills .card,
+#data-viz .focus-row{background:transparent}
+#skills .card p,
+#data-viz .focus-copy p{color:#555960!important}
+#data-viz .focus-symbol{
+  color:#641b28!important;background:#f4eded!important;border-color:#dfcdd0!important;
+}
+#data-viz .focus-tags span{
+  color:#4b3035!important;background:#fff!important;border-color:#dfcdd0!important;
+}
+.contact-links .btn{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  gap:10px!important;text-align:center!important;line-height:1.2!important;
+  min-height:54px!important;padding:14px 20px!important;
+}
+.contact-links .social-icon{
+  display:inline-flex;align-items:center;justify-content:center;
+  flex:0 0 22px;width:22px;height:22px;line-height:1;
+  font-size:1rem;font-weight:800;text-align:center;
+}
+.contact-links .email{
+  background:#641b28!important;border-color:#641b28!important;color:#fff!important;
+}
+.contact-links .email:hover{background:#4d111c!important;border-color:#4d111c!important}
+.contact-links .linkedin{
+  background:#0a66c2!important;border-color:#0a66c2!important;color:#fff!important;
+}
+.contact-links .github{
+  background:#24292f!important;border-color:#24292f!important;color:#fff!important;
+}
+@media(max-width:700px){
+  .contact-links{align-items:stretch!important}
+  .contact-links .btn{width:100%;min-height:54px}
+}
+
+
+/* Resume CTA: strong brand contrast and consistent with the primary action system.
+   Keep this selector more specific than .btn.social so its colours cannot be overridden. */
+.hero-actions .btn.social.resume-jump{
+  background:#641b28!important;
+  color:#ffffff!important;
+  border:1px solid #641b28!important;
+  box-shadow:0 3px 10px rgba(100,27,40,.12)!important;
+}
+.hero-actions .btn.social.resume-jump:hover,
+.hero-actions .btn.social.resume-jump:focus-visible{
+  background:#4d111c!important;
+  color:#ffffff!important;
+  border-color:#4d111c!important;
+}
+
+
+/* Technical Focus tags intentionally mirror the Technical Skills .chip component. */
+#data-viz .focus-tags span{
+  display:inline-block!important;
+  align-items:initial!important;
+  font-size:.74rem!important;
+  padding:3px 11px!important;
+  margin:3px 4px 3px 0!important;
+  border-radius:4px!important;
+  border:1px solid #dfcdd0!important;
+  color:#5a202b!important;
+  background:#f4eded!important;
+  font-weight:600!important;
+  line-height:1.5!important;
+}
+
+
+/* ===== Resume-only alignment update: keep certificate layout unchanged ===== */
+.resume-row{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(280px,340px)!important;align-items:center!important;gap:18px!important}
+.resume-actions{display:flex!important;justify-content:center!important;align-items:center!important;gap:10px!important;flex-wrap:wrap!important;width:100%!important}
+.resume-actions .resume-open{display:inline-flex!important;justify-content:center!important;align-items:center!important;min-width:132px!important;text-align:center!important}
+@media(max-width:600px){
+ .resume-row{grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+ .resume-actions{justify-content:center!important;flex-wrap:wrap!important}
+ .resume-actions .resume-open{flex:1 1 130px!important}
+}
+</style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Mali Vishalkumar Kantilal",
-  "alternateName": ["Mali Vishal", "malivishal"],
-  "url": "https://malivishal.in/",
-  "image": "https://malivishal.in/preview-image.jpg",
-  "jobTitle": [
-    "DevOps Engineer",
-    "Data Analyst",
-    "Python Developer"
-  ],
-  "sameAs": [
-    "https://github.com/maliVishal01/",
-    "https://www.linkedin.com/in/mali-vishal-68bb97269",
-    "https://malivishal.in/"
-  ],
-  "knowsAbout": [
-    "DevOps",
-    "AWS",
-    "Docker",
-    "CI/CD",
-    "Jenkins",
-    "GitHub Actions",
-    "Python",
-    "Django",
-    "Flask",
-    "SQL",
-    "Power BI",
-    "Linux",
-    "Data Analysis"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Ahmedabad",
-    "addressRegion": "Gujarat",
-    "addressCountry": "India"
-  }
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Mali Vishalkumar - DevOps Engineer Portfolio",
+  "url":"https://malivishal.in/",
+  "description":"Professional portfolio covering DevOps engineering, cloud infrastructure, CI/CD automation, Python backend development and data analytics.",
+  "inLanguage":"en-IN",
+  "about":{"@type":"Person","name":"Mali Vishalkumar","url":"https://malivishal.in/"},
+  "mainEntity":{"@type":"Person","name":"Mali Vishalkumar","sameAs":["https://www.linkedin.com/in/mali-vishal-devops","https://github.com/maliVishal01"]}
 }
 </script>
-
-<!-- 🔥 WEBSITE + SEARCH SCHEMA (FIXED DOMAIN) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Mali Vishalkumar Portfolio",
-  "url": "https://malivishal.in/",
-  "inLanguage": "en-IN"
-}
-</script>
-
-<!-- ================== 🔥 END SEO BOOST ================== -->
 </head>
 <body>
-  <!-- Your portfolio content goes here -->
-</body>
-</html>
+<div class="bg" aria-hidden="true"><i></i><i></i></div>
+<div id="bar"></div>
 
-
+<header><div class="wrap nav">
+  <a href="#home" class="brand">Mali Vishalkumar</a>
+  <nav aria-label="Main navigation"><ul id="menu-links">
+    <li><a class="l" href="#about">About</a></li><li><a class="l" href="#experience">Experience</a></li><li><a class="l" href="#skills">Skills</a></li>
+    <li><a class="l" href="#data-viz">Insights</a></li><li><a class="l" href="#projects">Projects</a></li><li><a class="l" href="#certifications">Certifications</a></li><li><a class="l" href="#contact">Contact</a></li>
     
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom Styles & Font Setup */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        :root {
-            /* Defining a vibrant tech color palette */
-            --primary: #06b6d4; /* Cyan 600 (Data/Tech Focus) */
-            --secondary: #fcd34d; /* Amber 300 (Innovation/Action) */
-            --bg-dark: #0f172a; /* Slate 900 (Deep Tech Background) */
-            --card-light: #1e293b; /* Slate 800 */
-            /* Header height is h-16 (4rem). Set margin to 4.5rem for perfect clearance. */
-            --header-offset: 4.5rem; 
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-dark); 
-            color: #e2e8f0; /* Light text */
-            
-            /* Creative Background: Subtle Radial Gradient for depth */
-            background-image: radial-gradient(circle at center, #1e293b 0%, var(--bg-dark) 80%);
-            position: relative; /* Needed for pseudo-element */
-        }
-        
-        /* --- HIGHLY RELIABLE NAVIGATION FIX (CSS Standard) --- */
-        /* Targets any element with an ID used as a fragment (#id) */
-        section[id] {
-            /* This property adds a margin to the top of the element when it is the scroll target, 
-               effectively pushing the content down to prevent the fixed header from covering it. */
-            scroll-margin-top: var(--header-offset);
-        }
+  </ul></nav>
+  <button id="burger" aria-label="Open menu">☰</button>
+</div></header>
 
-        /* Digital Noise/Texture Effect (More attractive than the ruler) */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            /* Subtly repeating diagonal lines from the primary color */
-            background: repeating-linear-gradient(
-                45deg,
-                rgba(6, 182, 212, 0.05),
-                rgba(6, 182, 212, 0.05) 1px,
-                transparent 1px,
-                transparent 3px
-            );
-            z-index: -1;
-            opacity: 0.4; /* Keep it subtle */
-        }
-        
-        .text-gradient {
-            /* Vibrant gradient for headings */
-            background-image: linear-gradient(to right, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .btn-primary {
-            /* Unified Primary Button Style (Cyan) */
-            background: var(--primary);
-            transition: all 0.3s ease;
-            color: var(--bg-dark); 
-            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3); /* Button shadow for lift */
-        }
-        .btn-primary:hover {
-            background: #0891b2; /* Darker Cyan on hover */
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(6, 182, 212, 0.6);
-        }
-        .section-header {
-            color: var(--primary);
-            border-bottom-color: var(--secondary);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(6, 182, 212, 0.25); /* Stronger lift effect */
-        }
-        /* Custom Scrollbar for better appearance on dark theme */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--card-light);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--primary);
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #0891b2;
-        }
-
-        /* Donut Chart Specific Styles */
-        .donut-ring {
-            stroke-dasharray: 282.7; /* Circumference (2 * pi * 45) */
-            stroke-dashoffset: 0;
-            transition: stroke-dashoffset 0.8s ease-in-out;
-        }
-    </style>
-</head>
-<body>
-
-<!-- FLOATING MESSAGE BOX (RETAINED FOR STATIC FEEDBACK/MODALS, but hidden) -->
-<div id="message-box" class="fixed top-5 right-5 p-4 rounded-lg shadow-xl text-white z-50 transition-all duration-300 hidden" style="transform: translateY(-150%);"></div>
-
-<!-- NAVIGATION BAR -->
-<header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-sm shadow-xl shadow-slate-950/50 border-b border-cyan-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-            <a href="#home" class="text-2xl font-extrabold text-gradient">Mali Vishalkumar</a>
-            <nav class="space-x-4 sm:space-x-8 hidden md:flex" id="main-nav">
-                <a href="#about" class="text-slate-300 hover:text-cyan-400 transition">About</a>
-                <a href="#skills" class="text-slate-300 hover:text-cyan-400 transition">Skills</a>
-                <a href="#data-viz" class="text-slate-300 hover:text-cyan-400 transition">Data Insights</a>
-                <a href="#projects" class="text-slate-300 hover:text-cyan-400 transition">Projects</a>
-                <a href="#certifications" class="text-slate-300 hover:text-cyan-400 transition">Certifications</a>
-                <a href="#contact" class="text-slate-300 hover:text-cyan-400 transition">Contact</a>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<!-- MAIN CONTENT AREA -->
-<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- 1. HOME/HERO SECTION -->
-    <!-- The ID acts as the scroll target. The CSS scroll-margin-top provides the offset. -->
-    <section id="home" class="pt-16 pb-20 text-center bg-slate-800 rounded-3xl shadow-2xl shadow-slate-950/70 mb-12 border border-slate-700">
-        <div class="relative w-36 h-36 mx-auto mb-6">
-            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn">
-                <!-- 
-                    *** STATIC PROFILE PICTURE LOCATION ***
-                    alt="Vishal Mali Professional Photo"
-                    Replace the placeholder URL below with the direct link to your photo.
-                -->
-                  <img 
-                    id="profile-img" 
-                    src="https://raw.githubusercontent.com/maliVishal01/document/main/WhatsApp%20Image%202025-11-27%20at%207.59.27%20PM.jpeg" 
-                    alt="Vishal Mali Professional Photo" 
-                    class="w-full h-full rounded-full object-cover border-4 border-cyan-500 shadow-xl hover:shadow-cyan-400/50 transition duration-300"
-                >
-                <!-- NOTE: The old Imgur fallback and the Drive link are now removed for cleaner code. -->
-            </a>
-            <!-- Live status indicator retained for aesthetic -->
-            <span class="absolute bottom-1 right-1 h-4 w-4 bg-amber-400 rounded-full border-2 border-slate-800 animate-pulse"></span>
-        </div>
-        <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 text-slate-50">
-            Hello, I'm <span class="text-gradient">Mali Vishalkumar</span>
-        </h1>
-        <p class="text-2xl text-slate-300 max-w-4xl mx-auto mb-8 font-light">
-            Entry-level DevOps Engineer &amp; Python Developer &amp; Data Analyst
-        </p>
-        <p class="text-lg text-slate-400 max-w-5xl mx-auto">
-            Blending strong analytical skills (SQL, Power BI, Excel) with backend development (Python, Django, Flask, AI Agents) and DevOps practices (AWS, CI/CD pipelines, Docker, Jenkins, GitHub Actions), I focus on building scalable solutions that bridge the gap between data-driven insights, cloud automation, and efficient technical implementation.
-        </p>
-        
-        <!-- RESUME OPTIONS AND LINKS -->
-        <div class="mt-10 flex flex-col lg:flex-row justify-center space-y-4 lg:space-y-0 lg:space-x-6">
-            
-            <!-- RESUME DOWNLOAD BUTTON (Primary Button with Dropdown Logic) -->
-            <div class="relative inline-block text-left w-full sm:w-auto mx-auto lg:mx-0">
-                <button id="resume-dropdown-btn" type="button" class="btn-primary text-slate-900 px-8 py-3 rounded-xl font-semibold shadow-lg shadow-cyan-500/30 w-full sm:w-80 lg:w-72 flex items-center justify-center">
-                    <!-- Resume Icon -->
-                    <svg class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm-1 7h5.5L13 3.5V7c0 1.1.9 2 2 2zM6 18c-1.1 0-2-.9-2-2h16c0 1.1-.89 2-2 2H6zm10-5H8v2h8v-2zm-3 4H8v2h5v-2zM8 7h3v2H8V7z"/></svg>
-                     Resume 
-                    <svg class="w-4 h-4 ml-2 transition-transform duration-300" id="resume-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-
-                <!-- Dropdown Menu - Hidden by default -->
-                <div id="resume-dropdown-menu" class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-full sm:w-80 lg:w-72 rounded-lg shadow-2xl bg-slate-700 ring-1 ring-slate-600 ring-opacity-5 focus:outline-none z-50 hidden">
-                    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="resume-dropdown-btn">
-                        <p class="px-4 py-1 text-xs text-slate-400 uppercase font-semibold">Choose Version:</p>
-                        <!-- IMPORTANT: Resume links updated for external opening and security -->
-                      <a href="https://drive.google.com/file/d/1dXMmZLanyJgvo8Kr0z44-oGmKPJdKQ20/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-slate-200 hover:bg-slate-600 hover:text-cyan-400 transition" role="menuitem">
-                            DevOps Engineer Resume (PDF)
-                        </a>
-                       <a href="https://drive.google.com/file/d/1PpCtNs4HW2KYGBzNeO9aDZBEMlMLt3CW/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-slate-200 hover:bg-slate-600 hover:text-cyan-400 transition" role="menuitem">
-                            Python Developer Resume (PDF)
-                        <a href="https://drive.google.com/file/d/1v_4CWaUfltLu9k6cRTzlmoTbZFXUqVMs/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-slate-200 hover:bg-slate-600 hover:text-cyan-400 transition" role="menuitem">
-                            Data Analyst Resume (PDF)
-                        </a>
-                        <a href="https://drive.google.com/file/d/1UYsNJAOXr_UcnYrPA23Z8zjPp0-BJLwy/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-slate-200 hover:bg-slate-600 hover:text-cyan-400 transition" role="menuitem">
-                            IT Role  Resume (PDF)
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- LinkedIn Button (Now uses primary cyan style) -->
-            <a href="https://www.linkedin.com/in/mali-vishal-68bb97269" target="_blank" rel="noopener noreferrer" class="btn-primary text-slate-900 px-8 py-3 rounded-xl font-semibold shadow-lg shadow-cyan-500/30 transition w-full sm:w-auto flex items-center justify-center">
-                <svg class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.529-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                Connect on LinkedIn
-            </a>
-            
-            <!-- GitHub Button (Now uses primary cyan style) -->
-            <a href="https://github.com/maliVishal01" target="_blank" rel="noopener noreferrer" class="btn-primary text-slate-900 px-8 py-3 rounded-xl font-semibold shadow-lg shadow-cyan-500/30 transition w-full sm:w-auto flex items-center justify-center">
-                <svg class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.742.082-.727.082-.727 1.205.086 1.838 1.235 1.838 1.235 1.07 1.835 2.809 1.305 3.498.998.108-.77.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.652.242 2.873.118 3.176.766.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.791 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                View GitHub
-            </a>
-        </div>
-    </section>
-
-
-    <!-- 2. ABOUT/EDUCATION -->
-    <section id="about" class="mb-12">
-        <h2 class="text-4xl font-extrabold section-header text-slate-50 mb-8 border-b-4 border-amber-400/50 pb-2">About Me</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="md:col-span-2 bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-700 card-hover transition duration-300">
-                <p class="text-slate-300 leading-relaxed">
-                  
-
-DevOps Engineer with hands-on experience in cloud infrastructure, CI/CD, automation, containerization, and backend development. Skilled in AWS, Docker, Jenkins, GitHub Actions, Linux, Python, and Git, with experience building and maintaining automated deployment and infrastructure workflows.
-
-Strong background in Python backend development using Django, Flask, Pandas, SQL, and REST APIs, with an understanding of system design and scalable application architecture. Experienced in developing automation solutions and integrating APIs and workflow automation tools such as n8n and Appify to improve operational efficiency.
-
-Strong problem-solving skills with a focus on building reliable, scalable, and automated systems while bridging development, cloud infrastructure, and DevOps practices.
-
-                </p>
-                <div class="mt-6 text-sm">
-                    <p class="font-semibold text-slate-200">DOB: 13 March 2003</p>
-                    <!-- IMPORTANT: Update Email link -->
-                    <p class="font-semibold text-slate-200">Email: <a href="mailto:Malivishal28711@gmail.com" class="text-cyan-400 hover:underline">Malivishal28711@gmail.com</a></p>
-                </div>
-            </div>
-            
-            <div class="bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-700 card-hover transition duration-300">
-                <h3 class="text-xl font-bold text-cyan-400 mb-4">Education</h3>
-                <ul class="space-y-4">
-                    <li class="border-l-4 border-amber-400 pl-4">
-                        <p class="font-semibold text-slate-200">MSc in Information Technology</p>
-                        <p class="text-sm text-slate-400">Maharaja Sayajirao University (MSU), Baroda</p>
-                        <p class="text-xs text-slate-500">June 2024 - April 2026</p>
-                    </li>
-                    <li class="border-l-4 border-amber-400 pl-4">
-                        <p class="font-semibold text-slate-200">BSc (CA & IT)</p>
-                        <p class="text-sm text-slate-400">Hemchandracharya North Gujarat University (HNGU), Patan</p>
-                        <p class="text-xs text-slate-500">June 2021 - April 2024</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- IMPORTANT: Update experience  -->
-
-   <!-- IMPORTANT: Experience -->
-
-<section id="experience" class="mb-12">
-    <h2 class="text-4xl font-extrabold section-header text-slate-50 mb-8 border-b-4 border-amber-400/50 pb-2">
-        Experience
-    </h2>
-
-
-    <!-- ==================== CURRENT JOB ==================== -->
-
-    <div class="bg-slate-800 p-8 rounded-xl shadow-lg border border-slate-700 card-hover transition duration-300 mb-8">
-
-        <!-- Header Row -->
-        <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-
-            <!-- Left: Role + Company -->
-            <div>
-                <h3 class="text-2xl font-bold text-cyan-400">
-                    DevOps Engineer
-                </h3>
-
-                <!-- Company Name -->
-                <p class="text-sm text-amber-400 font-semibold">
-                    Lintel Technologies Pvt. Ltd
-                </p>
-
-                <!-- Location -->
-                <p class="text-xs text-amber-400">
-                    Ahmedabad, India
-                </p>
-            </div>
-
-            <!-- Right: Duration -->
-            <div class="text-sm text-amber-400 font-semibold">
-                June 2026 - Present
-            </div>
-
-        </div>
-
-        <!-- Description -->
-        <p class="text-slate-400 mb-6 leading-relaxed">
-            Working as a DevOps Engineer, focusing on cloud infrastructure, CI/CD automation,
-            application deployment, containerization, and system reliability. Working with
-            AWS, Docker, Jenkins, GitHub Actions, Linux, and automation tools to support
-            scalable and efficient development and deployment workflows.
-        </p>
-
-        <!-- Skills / Work Highlights -->
-        <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-6">
-            <p>Managing CI/CD pipelines using GitHub Actions & Jenkins</p>
-            <p>Managing and deploying applications on AWS infrastructure</p>
-            <p>Containerizing applications using Docker & Docker Compose</p>
-            <p>Automating deployment and development workflows</p>
-            <p>Monitoring applications and infrastructure using AWS CloudWatch</p>
-            <p>Working with Linux systems, shell scripting, and troubleshooting</p>
-        </div>
-
-        <!-- Button -->
-         <!-- <div class="text-left">
-            <a href="https://drive.google.com/file/d/1oV6cyEsGSmNMOXOQ2ZbWI9-ZusxvXcZR/view?usp=drive_link"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn-primary px-6 py-3 rounded-xl font-semibold shadow-lg shadow-cyan-500/30 inline-flex items-center">
-
-                <!-- Icon -->
-               <!--  <span class="mr-2 text-amber-400"></span>
-                Offer Letter
-            </a>
-        </div>
-
-    </div>
--->
-
-    <!-- ==================== DEVOPS INTERNSHIP ==================== -->
-
-    <div class="bg-slate-800 p-8 rounded-xl shadow-lg border border-slate-700 card-hover transition duration-300">
-
-        <!-- Header Row -->
-        <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-
-            <!-- Left: Role + Company -->
-            <div>
-                <h3 class="text-2xl font-bold text-cyan-400">
-                    DevOps Engineer Intern
-                </h3>
-
-                <!-- Company Name -->
-                <p class="text-sm text-amber-400 font-semibold">
-                    Lintel Technologies Pvt. Ltd
-                </p>
-
-                <!-- Location -->
-                <p class="text-xs text-amber-400">
-                    Ahmedabad, India
-                </p>
-            </div>
-
-            <!-- Right: Duration -->
-            <div class="text-sm text-amber-400 font-semibold">
-                Dec 2025 - June 2026
-            </div>
-
-        </div>
-
-        <!-- Description -->
-        <p class="text-slate-400 mb-6 leading-relaxed">
-            Completed a hands-on DevOps internship where I worked on cloud deployment,
-            CI/CD automation, and containerized applications. Gained practical experience
-            in AWS, Docker, Jenkins, and GitHub Actions, focusing on building scalable
-            and automated deployment pipelines.
-        </p>
-
-        <!-- Skills / Work Highlights -->
-        <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300 mb-6">
-            <p>Built CI/CD pipelines using GitHub Actions & Jenkins</p>
-            <p>Deployed applications on AWS EC2 and hosted static sites on S3</p>
-            <p>Containerized applications using Docker & Docker Compose</p>
-            <p>Integrated SonarQube for code quality analysis</p>
-            <p>Monitored applications using AWS CloudWatch</p>
-            <p>Worked on Linux systems and shell scripting</p>
-        </div>
-
-        <!-- Button -->
-        <div class="text-left">
-            <a href="https://drive.google.com/file/d/1pa8Ps6tEKyeK0mszfzwB3mQFTG_OKhBj/view?usp=drive_link"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn-primary px-6 py-3 rounded-xl font-semibold shadow-lg shadow-cyan-500/30 inline-flex items-center">
-
-                <!-- Icon -->
-                <span class="mr-2 text-amber-400"></span>
-                Internship Certificate
-            </a>
-        </div>
-
-    </div>
-
+<main class="wrap">
+<!-- ============ 1. HOME ============ -->
+<section id="home" class="hero">
+  <div class="network-scene" aria-hidden="true">
+  <div class="cloud cloud-a"><span></span><span></span><span></span></div>
+  <div class="cloud cloud-b"><span></span><span></span><span></span></div>
+  <div class="network-lines"></div>
+  <i class="node n1"></i><i class="node n2"></i><i class="node n3"></i><i class="node n4"></i>
+  <i class="packet p1"></i><i class="packet p2"></i><i class="packet p3"></i>
+</div>
+  <div class="ava"><a href="https://www.linkedin.com/in/mali-vishal-devops" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn" style="display:block;width:100%;height:100%">
+    <!-- PROFILE PHOTO: change the src link below -->
+    <img src="https://raw.githubusercontent.com/maliVishal01/document/main/WhatsApp%20Image%202025-11-27%20at%207.59.27%20PM.jpeg" alt="Mali Vishalkumar professional photo"></a></div>
+  <h1>Hello, I'm <span class="grad">Mali Vishalkumar</span></h1>
+  <p class="role"><b id="typed"></b><u></u></p>
+  <p class="sub">I work across cloud infrastructure, DevOps automation and backend development. My experience includes deploying applications on AWS, building CI/CD pipelines, working with Docker and Jenkins, and developing Python applications with Django and Flask. I also use SQL, Power BI and Excel to turn data into clear, useful insights. I enjoy building reliable systems that connect software development, automation and data.</p>
+  <div class="row hero-actions">
+    <a class="btn social linkedin" href="https://www.linkedin.com/in/mali-vishal-devops" target="_blank" rel="me noopener noreferrer">in&nbsp; Connect on LinkedIn</a>
+    <a class="btn social github" href="https://github.com/maliVishal01" target="_blank" rel="me noopener noreferrer">⌘&nbsp; GitHub Projects</a>
+    <a class="btn social resume-jump" href="#resume">▤&nbsp; View Resume</a>
+  </div>
+  <!-- STATS: change numbers in data-n -->
+  <div class="stats"><div class="stat"><b class="grad" data-n="6">0</b><span class="mut">Months DevOps Internship</span></div>
+    <div class="stat"><b class="grad" data-n="9">0</b><span class="mut">Projects</span></div>
+    <div class="stat"><b class="grad" data-n="9">0</b><span class="mut">Certifications</span></div>
+    <div class="stat"><b class="grad" data-n="2">0</b><span class="mut">Degrees (MSc IT, BSc CA &amp; IT)</span></div></div>
 </section>
 
-    <!-- 3. SKILLS SECTION - Enhanced with Icons -->
-    <section id="skills" class="mb-12 p-8 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
-        <h2 class="text-4xl font-extrabold section-header text-slate-50 mb-8 border-b-4 border-amber-400/50 pb-2">Technical Skills</h2>
-        <!-- Using a 2x2 grid on mobile and up to 4x4 on desktop for responsiveness -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- ============ 2. ABOUT ============ -->
+<section id="about" class="rv"><h2>About Me</h2>
+<div class="g2">
+  <div class="card">
+    <p class="mut" style="font-size:1rem">DevOps Engineer with hands-on experience in cloud infrastructure, CI/CD, automation, containerization, and backend development. Skilled in AWS, Docker, Jenkins, GitHub Actions, Linux, Python, and Git, with experience building and maintaining automated deployment and infrastructure workflows.</p><br>
+    <p class="mut" style="font-size:1rem">Strong background in Python backend development using Django, Flask, Pandas, SQL, and REST APIs, with an understanding of system design and scalable application architecture. Experienced in developing automation solutions and integrating APIs and workflow automation tools such as n8n and Appify to improve operational efficiency.</p><br>
+    <p class="mut" style="font-size:1rem">Strong problem-solving skills with a focus on building reliable, scalable, and automated systems while bridging development, cloud infrastructure, and DevOps practices.</p>
+    <p style="margin-top:18px;font-size:.9rem"><b>DOB:</b> 13 October 2003<br><b>Email:</b> <a href="mailto:Malivishal28711@gmail.com" style="color:var(--c1)">Malivishal28711@gmail.com</a></p>
+  </div>
+  <div class="card"><h3>Education</h3>
+    <div class="edu"><b>MSc in Information Technology</b><p class="mut">Maharaja Sayajirao University (MSU), Baroda</p><span class="am">June 2024 - April 2026</span></div>
+    <div class="edu"><b>BSc (CA &amp; IT)</b><p class="mut">Hemchandracharya North Gujarat University (HNGU), Patan</p><span class="am">June 2021 - April 2024</span></div>
+  </div>
+</div></section>
 
-            <!-- Skill Block: DevOps & Cloud (Cyan Accent) -->
-<div class="p-4 border-l-4 border-cyan-500 bg-slate-700/50 rounded-lg transition card-hover hover:bg-slate-700">
-    <h3 class="font-bold text-lg text-slate-50 mb-2 flex items-center">
-        <!-- DevOps Icon (Cloud + Gear style) -->
-        <svg class="w-5 h-5 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 15a4 4 0 014-4h1a5 5 0 019.584 1.5A3.5 3.5 0 1118 20H7a4 4 0 01-4-5z"/>
-        </svg>
-        DevOps & Cloud
-    </h3>
-    <ul class="text-slate-400 text-sm space-y-2">
-        <li>AWS (EC2, S3, IAM, CloudFront)</li>
-        <li>CI/CD Pipelines (GitHub Actions, Jenkins)</li>
-        <li>Docker & Containerization</li>
-        <li>Linux & Shell Scripting</li>
-        <li>Monitoring (CloudWatch - Basics)</li>
-        <li>Version Control (Git, GitHub)</li>
-    </ul>
-</div>
-            
-            <!-- Skill Block 1: Programming & Backend (Cyan Accent) -->
-            <div class="p-4 border-l-4 border-cyan-500 bg-slate-700/50 rounded-lg transition card-hover hover:bg-slate-700">
-                <h3 class="font-bold text-lg text-slate-50 mb-2 flex items-center">
-                    <!-- Programming Icon (Simple angle brackets) -->
-                    <svg class="w-5 h-5 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                    Programming & Backend
-                </h3>
-                <ul class="text-slate-400 text-sm space-y-2">
-                    <li>Python (Pandas, Numpy)</li>
-                    <li>Django, Flask (API/Web App Dev)</li>
-                    <li>Java, C, Basic DSA</li>
-                    <li>REST API Handling</li>
-                </ul>
-            </div>
+<!-- ============ 3. EXPERIENCE (copy a card to add a job) ============ -->
+<section id="experience" class="rv"><h2>Experience</h2><div class="g">
+  <article class="card"><h3>DevOps Engineer</h3><p class="am">Lintel Technologies Pvt. Ltd, Ahmedabad, India | June 2026 - Present</p>
+    <p class="mut" style="margin:10px 0">Working as a DevOps Engineer, focusing on cloud infrastructure, CI/CD automation, application deployment, containerization, and system reliability. Working with AWS, Docker, Jenkins, GitHub Actions, Linux, and automation tools to support scalable and efficient development and deployment workflows.</p>
+    <ul class="dot"><li>Managing CI/CD pipelines using GitHub Actions &amp; Jenkins</li><li>Managing and deploying applications on AWS infrastructure</li><li>Containerizing applications using Docker &amp; Docker Compose</li><li>Automating deployment and development workflows</li><li>Monitoring applications and infrastructure using AWS CloudWatch</li><li>Working with Linux systems, shell scripting, and troubleshooting</li></ul></article>
+  <article class="card"><h3>DevOps Engineer Intern</h3><p class="am">Lintel Technologies Pvt. Ltd, Ahmedabad, India | Dec 2025 - June 2026</p>
+    <p class="mut" style="margin:10px 0">Completed a hands-on DevOps internship where I worked on cloud deployment, CI/CD automation, and containerized applications. Gained practical experience in AWS, Docker, Jenkins, and GitHub Actions, focusing on building scalable and automated deployment pipelines.</p>
+    <ul class="dot"><li>Built CI/CD pipelines using GitHub Actions &amp; Jenkins</li><li>Deployed applications on AWS EC2 and hosted static sites on S3</li><li>Containerized applications using Docker &amp; Docker Compose</li><li>Integrated SonarQube for code quality analysis</li><li>Monitored applications using AWS CloudWatch</li><li>Worked on Linux systems and shell scripting</li></ul>
+    <a class="btn" style="margin-top:14px" id="intern-cert" href="#" target="_blank" rel="noopener noreferrer">Internship Certificate</a></article>
+</div></section>
 
-            <!-- Skill Block 2: Data Tools & BI (Amber Accent) -->
-            <div class="p-4 border-l-4 border-amber-500 bg-slate-700/50 rounded-lg transition card-hover hover:bg-slate-700">
-                <h3 class="font-bold text-lg text-slate-50 mb-2 flex items-center">
-                    <!-- Data Icon (Bar chart) -->
-                    <svg class="w-5 h-5 mr-2 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l-2 1m2 12l-2-1V6M16 5l-2 1M16 5V3m0 2h3m-6 9V7l-2 1m2 13V9"></path></svg>
-                    Data Tools & Reporting
-                </h3>
-                <ul class="text-slate-400 text-sm space-y-2">
-                    <li>SQL, MySQL (Joins, Query Opt.)</li>
-                    <li>Power BI (Basic DAX, Dashboards)</li>
-                    <li>Excel (Pivot Tables, VLOOKUP)</li>
-                    <li>Oracle Analytics Cloud</li>
-                </ul>
-            </div>
+<!-- ============ 4. SKILLS (edit chips; copy a card to add a group) ============ -->
+<section id="skills" class="rv"><h2>Technical Skills</h2><div class="g">
+  <div class="card"><h3>☁ DevOps &amp; Cloud</h3><span class="chip">AWS (EC2, S3, IAM, CloudFront)</span><span class="chip">GitHub Actions</span><span class="chip">Jenkins</span><span class="chip">Docker</span><span class="chip">Linux &amp; Shell Scripting</span><span class="chip">CloudWatch</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">SonarQube</span><span class="chip">Trivy</span><span class="chip">Git, GitHub</span></div>
+  <div class="card"><h3>&lt;/&gt; Programming &amp; Backend</h3><span class="chip">Python (Pandas, Numpy)</span><span class="chip">Django, Flask</span><span class="chip">Java, C, Basic DSA</span><span class="chip">REST API Handling</span></div>
+  <div class="card"><h3>📊 Data Tools &amp; Reporting</h3><span class="chip">SQL, MySQL</span><span class="chip">Power BI (Basic DAX, Dashboards)</span><span class="chip">Excel (Pivot Tables, VLOOKUP)</span><span class="chip">Oracle Analytics Cloud</span></div>
+  <div class="card"><h3>🤖 AI &amp; Automation</h3><span class="chip">AI Agents / RAG Chatbots</span><span class="chip">n8n Workflow Automation</span><span class="chip">Postman API Testing</span><span class="chip">Cloud Automation Basics</span></div>
+  <div class="card"><h3>🖥 Systems &amp; Platforms</h3><span class="chip">Git &amp; GitHub</span><span class="chip">Cyber Security Basics</span><span class="chip">HTML, CSS, JavaScript</span><span class="chip">Linux/Bash Shell</span></div>
+</div></section>
 
-            <!-- Skill Block 3: AI & Automation (Red Accent) -->
-            <div class="p-4 border-l-4 border-red-500 bg-slate-700/50 rounded-lg transition card-hover hover:bg-slate-700">
-                <h3 class="font-bold text-lg text-slate-50 mb-2 flex items-center">
-                    <!-- AI Icon (Brain/Chip) -->
-                    <svg class="w-5 h-5 mr-2 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 17h10a2 2 0 002-2V9a2 2 0 00-2-2H7a2 2 0 00-2 2v6a2 2 0 002 2z"></path></svg>
-                    AI & Automation
-                </h3>
-                <ul class="text-slate-400 text-sm space-y-2">
-                    <li>AI Agents / RAG Chatbots</li>
-                    <li>n8n Workflow Automation</li>
-                    <li>Postman API Testing</li>
-                    <li>Cloud Automation Basics</li>
-                </ul>
-            </div>
+<!-- ============ 5. DATA INSIGHTS (edit data-v = percent) ============ -->
+<section id="data-viz" class="rv"><h2>Technical Focus</h2>
+  <p class="insight-intro">A practical overview of the technologies I use to build, deploy and support reliable applications.</p>
+  <div class="focus-list">
+    <article class="focus-row">
+      <div class="focus-symbol" aria-hidden="true">☁</div>
+      <div class="focus-copy"><h3>Cloud &amp; DevOps</h3><p>AWS infrastructure, CI/CD workflows, containerisation and deployment automation.</p><div class="focus-tags"><span>AWS</span><span>Docker</span><span>Jenkins</span><span>GitHub Actions</span></div></div>
+    </article>
+    <article class="focus-row">
+      <div class="focus-symbol" aria-hidden="true">&lt;/&gt;</div>
+      <div class="focus-copy"><h3>Backend Development</h3><p>Building application logic, backend services and integrations.</p><div class="focus-tags"><span>Python</span><span>Django</span><span>Flask</span><span>REST APIs</span></div></div>
+    </article>
+    <article class="focus-row">
+      <div class="focus-symbol" aria-hidden="true">▤</div>
+      <div class="focus-copy"><h3>Data &amp; Analytics</h3><p>Working with structured data, reporting and business-focused dashboards.</p><div class="focus-tags"><span>SQL</span><span>MySQL</span><span>Power BI</span><span>Excel</span></div></div>
+    </article>
+    <article class="focus-row">
+      <div class="focus-symbol" aria-hidden="true">⌘</div>
+      <div class="focus-copy"><h3>Systems &amp; Networking</h3><p>Linux administration, shell scripting, infrastructure troubleshooting and monitoring.</p><div class="focus-tags"><span>Linux</span><span>Bash</span><span>Networking</span><span>CloudWatch</span></div></div>
+    </article>
+    <article class="focus-row">
+      <div class="focus-symbol" aria-hidden="true">◇</div>
+      <div class="focus-copy"><h3>Security &amp; Automation</h3><p>Supporting secure delivery pipelines, testing and repeatable workflows.</p><div class="focus-tags"><span>Trivy</span><span>SonarQube</span><span>Postman</span><span>n8n</span></div></div>
+    </article>
+  </div>
+</section>
 
-            <!-- Skill Block 4: Systems & Others (Green Accent) -->
-            <div class="p-4 border-l-4 border-green-500 bg-slate-700/50 rounded-lg transition card-hover hover:bg-slate-700">
-                <h3 class="font-bold text-lg text-slate-50 mb-2 flex items-center">
-                    <!-- Systems Icon (Server rack) -->
-                    <svg class="w-5 h-5 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path></svg>
-                    Systems & Platforms
-                </h3>
-                <ul class="text-slate-400 text-sm space-y-2">
-                    <li>Git & GitHub</li>
-                    <li>Cyber Security Basics</li>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>Linux/Bash Shell</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+<!-- ============ 6. PROJECTS (rendered from the PROJECTS list in the script) ============ -->
+<section id="projects" class="rv"><h2>Projects</h2><div class="filters" id="filters"></div><div class="g" id="project-list"></div></section>
 
-    <!-- 4. DATA VISUALIZATION & KEY METRICS SECTION (Static) -->
-    <section id="data-viz" class="mb-12 p-8 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
-        <h2 class="text-4xl font-extrabold section-header text-slate-50 mb-8 border-b-4 border-amber-400/50 pb-2">Data Insights </h2>
-        <!--<p class="text-slate-400 mb-6 max-w-4xl">Visualizing my focus areas and project distribution, demonstrating proficiency in data reporting and dashboard design (Values are static and editable below).</p>
-    -->
-        <div class="grid md:grid-cols-3 gap-8">
+<!-- ============ 7. CERTIFICATIONS (rendered from the CERTS list in the script) ============ -->
+<section id="certifications" class="rv"><h2>Certifications &amp; Workshops</h2><div class="g" id="cert-list"></div></section>
 
-            <!-- Metric Card: DevOps Expertise -->
-<div class="bg-slate-700 p-6 rounded-lg border-b-4 border-cyan-500 card-hover transition duration-300">
-    <p class="text-sm text-slate-400 uppercase">Primary Expertise</p>
-    <p id="primary-focus" class="text-3xl font-bold text-cyan-400 mt-1">DevOps & Cloud (55%)</p>
-    <div class="h-2 bg-slate-600 rounded-full mt-3">
-        <div class="h-full bg-cyan-500 rounded-full" style="width: 75%;"></div>
-    </div>
-</div>
-            
-            <!-- Metric Card 1: Primary Focus (Static - edit value and width in style attribute) -->
-            <div class="bg-slate-700 p-6 rounded-lg border-b-4 border-cyan-500 card-hover transition duration-300">
-                <p class="text-sm text-slate-400 uppercase">Primary Expertise</p>
-                <p id="primary-focus" class="text-3xl font-bold text-cyan-400 mt-1">Python/Backend (70%)</p>
-                <div class="h-2 bg-slate-600 rounded-full mt-3"><div class="h-full bg-cyan-500 rounded-full" style="width: 70%;"></div></div>
-            </div>
+<!-- ============ RESUME ============ -->
+<section id="resume" class="rv"><h2>Resume</h2>
+  <p class="insight-intro">Choose the version that best matches the position you are applying for.</p>
+  <div class="resume-list" id="resume-list"></div>
+</section>
 
-            <!-- Metric Card 2: Analytical Focus (Static - edit value and width in style attribute) -->
-            <div class="bg-slate-700 p-6 rounded-lg border-b-4 border-amber-500 card-hover transition duration-300">
-                <p class="text-sm text-slate-400 uppercase">Analytical Focus</p>
-                <p id="secondary-focus" class="text-3xl font-bold text-amber-400 mt-1">Data/SQL/BI (60%)</p>
-                <div class="h-2 bg-slate-600 rounded-full mt-3"><div class="h-full bg-amber-500 rounded-full" style="width: 60%;"></div></div>
-            </div>
-            
-            <!-- Metric Card 3: Other Skills (Static - edit value and width in style attribute) -->
-            <div class="bg-slate-700 p-6 rounded-lg border-b-4 border-red-500 card-hover transition duration-300">
-                <p class="text-sm text-slate-400 uppercase">Automation/IT/AI</p>
-                <p id="other-skills" class="text-3xl font-bold text-red-400 mt-1">IT/Security (70%)</p>
-                <div class="h-2 bg-slate-600 rounded-full mt-3"><div class="h-full bg-red-500 rounded-full" style="width: 70%;"></div></div>
-            </div>
-        </div>
-        
-        <!-- Bar Chart (Static SVG Visualization) -->
-        <div class="mt-10 bg-slate-700 p-6 rounded-xl border border-slate-600 card-hover transition duration-300">
-    <h3 class="text-xl font-bold text-slate-200 mb-4">Core Skill Distribution</h3>
-
-    <svg viewBox="0 0 650 200" class="w-full h-auto max-h-80">
-
-        <!-- X-Axis -->
-        <line x1="50" y1="180" x2="600" y2="180" stroke="#475569" stroke-width="2"/>
-
-        <!-- Bar 1: DevOps (55%) -->
-        <rect x="70" y="70" width="70" height="110" fill="#38bdf8" rx="4" ry="4"></rect>
-        <text x="105" y="65" fill="#38bdf8" font-size="14" text-anchor="middle">55%</text>
-        <text x="105" y="195" fill="#94a3b8" font-size="14" text-anchor="middle">DevOps</text>
-
-        <!-- Bar 2: Python (75%) -->
-        <rect x="170" y="27" width="70" height="153" fill="#06b6d4" rx="4" ry="4"></rect>
-        <text x="205" y="22" fill="#06b6d4" font-size="14" text-anchor="middle">75%</text>
-        <text x="205" y="195" fill="#94a3b8" font-size="14" text-anchor="middle">Python</text>
-
-        <!-- Bar 3: SQL (65%) -->
-        <rect x="270" y="63" width="70" height="117" fill="#fcd34d" rx="4" ry="4"></rect>
-        <text x="305" y="58" fill="#fcd34d" font-size="14" text-anchor="middle">65%</text>
-        <text x="305" y="195" fill="#94a3b8" font-size="14" text-anchor="middle">SQL/DB</text>
-
-        <!-- Bar 4: Systems (50%) -->
-        <rect x="370" y="90" width="70" height="90" fill="#f87171" rx="4" ry="4"></rect>
-        <text x="405" y="85" fill="#f87171" font-size="14" text-anchor="middle">50%</text>
-        <text x="405" y="195" fill="#94a3b8" font-size="14" text-anchor="middle">Systems</text>
-
-        <!-- Bar 5: Power BI (50%) -->
-        <rect x="470" y="90" width="70" height="90" fill="#34d399" rx="4" ry="4"></rect>
-        <text x="505" y="85" fill="#34d399" font-size="14" text-anchor="middle">50%</text>
-        <text x="505" y="195" fill="#94a3b8" font-size="14" text-anchor="middle">Power BI</text>
-
-    </svg>
-</div>
-
-    <!-- 5. PROJECTS SECTION (Static Content) -->
-
-    <section id="projects" class="mt-10 mb-12"></section>
-        <h2 class="text-4xl font-extrabold section-header text-slate-50 mb-8 border-b-4 border-amber-400/50 pb-2">Projects</h2>
-        <div id="project-list" class="grid md:grid-cols-2 gap-8">
-
-            <div class="bg-slate-800 p-6 rounded-xl shadow-lg transition duration-300 relative group border border-slate-700 card-hover"> 
-
-    <h3 class="text-xl font-bold text-cyan-400 mb-2">DevOps CI/CD Zomato Clone Deployment</h3>
-    
-    <p class="text-slate-400 mb-4">
-        Designed and implemented a complete DevOps CI/CD pipeline to automate the deployment of a Zomato clone application. 
-        The workflow includes code integration, quality analysis, containerization, security scanning, and deployment on AWS EC2.
-        Automated pipeline: Code push → SonarCloud scan → Docker build → Trivy scan → EC2 deployment.
-    </p>
-
-    <div class="mb-4 text-sm font-semibold text-slate-300">
-        <span class="mr-3 text-cyan-500">Tools:</span> GitHub, GitHub Actions, Jenkins, Docker, Trivy, SonarCloud, AWS EC2
-    </div>
-
-    <div class="mb-4">
-        <span class="inline-block bg-amber-800/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full border border-amber-500/50">DevOps</span>
-        <span class="inline-block bg-amber-800/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full border border-amber-500/50">CI/CD</span>
-        <span class="inline-block bg-amber-800/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full border border-amber-500/50">Docker</span>
-    </div>
-
-    <div class="flex space-x-4 pt-2 border-t border-slate-700/50">
-        <a href="https://github.com/maliVishal01/devops-zomato-cicd-project" target="_blank" class="text-cyan-400 hover:text-cyan-200 font-medium">
-            GitHub Link
-        </a>
-    </div>
-</div>
-
-<div class="bg-slate-800 p-6 rounded-xl shadow-lg transition duration-300 relative group border border-slate-700 card-hover"> 
-
-    <h3 class="text-xl font-bold text-cyan-400 mb-2">DevOps CI/CD - Gym Management System</h3>
-    
-    <p class="text-slate-400 mb-4">
-        Implemented a 3-tier Gym Management System deployment using DevOps practices. 
-        Built CI/CD pipeline with GitHub Actions to automate build, testing, and deployment.
-        Containerized application using Docker and deployed on AWS EC2 for scalable and reliable hosting.
-    </p>
-
-    <div class="mb-4 text-sm font-semibold text-slate-300">
-        <span class="mr-3 text-cyan-500">Tools:</span> GitHub Actions, Docker, AWS EC2, Django, Linux
-    </div>
-
-    <div class="mb-4">
-        <span class="inline-block bg-amber-800/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full border border-amber-500/50">DevOps</span>
-        <span class="inline-block bg-amber-800/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full border border-amber-500/50">Automation</span>
-        <span class="inline-block bg-amber-800/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full border border-amber-500/50">Cloud</span>
-    </div>
-
-    <div class="flex space-x-4 pt-2 border-t border-slate-700/50">
-        <a href="https://github.com/maliVishal01/gym-management-devops" target="_blank" class="text-cyan-400 hover:text-cyan-200 font-medium">
-            GitHub Link
-        </a>
-    </div>
-</div>
-
-<div class="bg-slate-800 p-6 rounded-xl shadow-lg transition duration-300 relative group border border-slate-700 card-hover"> 
-
-    <h3 class="text-xl font-bold text-cyan-400 mb-2">AWS DevOps - Static Website Hosting</h3>
-    
-    <p class="text-slate-400 mb-4">
-        Deployed a static website using AWS S3 and CloudFront CDN with full DevOps practices. 
-        Implemented version control using GitHub, enabled S3 versioning for backup, and configured CloudFront for global content delivery. 
-        Monitored performance using AWS CloudWatch.
-    </p>
-
-    <div class="mb-4 text-sm font-semibold text-slate-300">
-        <span class="mr-3 text-cyan-500">Tools:</span> AWS S3, CloudFront, CloudWatch, GitHub
-    </div>
-
-    <div class="mb-4">
-        <span class="inline-block bg-amber-800/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full border border-amber-500/50">AWS</span>
-        <span class="inline-block bg-amber-800/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full border border-amber-500/50">Cloud</span>
-        <span class="inline-block bg-amber-800/20 text-amber-300 text-xs px-2.5 py-0.5 rounded-full border border-amber-500/50">Hosting</span>
-    </div>
-
-    <div class="flex space-x-4 pt-2 border-t border-slate-700/50">
-        <a href="https://github.com/maliVishal01/devops-static-website" target="_blank" class="text-cyan-400 hover:text-cyan-200 font-medium">
-            GitHub Link
-        </a>
-    </div>
-</div>
-            
-            <!-- Project Item 1: Courier Management System (Edit Content Below) -->
-            <div class="bg-slate-800 p-6 rounded-xl shadow-lg transition duration-300 relative group border border-slate-700 card-hover"> 
-                
-                <!-- NOTE: Project Image Placeholder REMOVED here per user request -->
-                
-                <h3 class="text-xl font-bold text-cyan-400 mb-2">Brijesh Fitness - Gym Management Platform</h3>
-                <p class="text-slate-400 mb-4">A full-stack web application built with Python (Django/Flask) to automate gym operations, manage memberships, track attendance, and provide interactive dashboards for admins and members.</p>
-                <div class="mb-4 text-sm font-semibold text-slate-300">
-                    <span class="mr-3 text-cyan-500">Tools:</span> Python, Django, HTML, CSS, SQLite
-                </div>
-                <div class="mb-4">
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Backend</span>
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Full-Stack</span>
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Web App</span>
-                </div>
-                <!-- Links now below the text for better hierarchy -->
-                <div class="flex space-x-4 pt-2 border-t border-slate-700/50">
-                    <!-- IMPORTANT: Update GitHub Link -->
-                    <a href="https://github.com/maliVishal01/Brijesh-s-Fitness" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-200 font-medium transition duration-200 flex items-center">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.742.082-.727.082-.727 1.205.086 1.838 1.235 1.838 1.235 1.07 1.835 2.809 1.305 3.498.998.108-.77.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.652.242 2.873.118 3.176.766.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.791 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                        GitHub Link
-                    </a>
-                    <!-- IMPORTANT: Update Live Demo 
-                    <a href="YOUR_PROJECT_LIVE_DEMO_URL" target="_blank" rel="noopener noreferrer" title="Opens in a new tab. Ensure the target site is fully responsive." class="text-amber-400 hover:text-amber-200 font-medium transition duration-200 flex items-center">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-7-5l5-5m0 0h-5m5 0v5"></path></svg>
-                        Live Demo-->
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project Item 2: Python Scripting & Automation Project (Edit Content Below) -->
-            <div class="bg-slate-800 p-6 rounded-xl shadow-lg transition duration-300 relative group border border-slate-700 card-hover"> 
-                
-                 <!-- NOTE: Project Image Placeholder REMOVED here per user request -->
-
-                <h3 class="text-xl font-bold text-cyan-400 mb-2">Fast Moving - Courier Management System</h3>
-                <p class="text-slate-400 mb-4">A full-stack application designed to streamline and automate courier logistics and operations. It features user authentication, real-time tracking, and comprehensive administrative control over staff and packages. This system significantly improves efficiency and reduces manual tracking  by automating the process from pickup to delivery.</p>
-                <div class="mb-4 text-sm font-semibold text-slate-300">
-                    <span class="mr-3 text-cyan-500">Tools:</span> Python, Django/Flask, HTML, CSS, SQL/MySQL/SQLite
-                </div>
-                <div class="mb-4">
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Full-Stack</span>
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Web App</span>
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">mange Courier operation </span>
-                </div>
-                 <!-- Links now below the text for better hierarchy -->
-                <div class="flex space-x-4 pt-2 border-t border-slate-700/50">
-                    <!-- IMPORTANT: Update GitHub Link -->
-                    <a href="https://github.com/maliVishal01/fast-moving-cms" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-200 font-medium transition duration-200 flex items-center">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.742.082-.727.082-.727 1.205.086 1.838 1.235 1.838 1.235 1.07 1.835 2.809 1.305 3.498.998.108-.77.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.652.242 2.873.118 3.176.766.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.791 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                        GitHub Link
-                    </a>
-                    <!-- If you add a Live Demo link here, make sure to include target="_blank" and rel="noopener noreferrer" -->
-                    <!-- 
-                    <a href="YOUR_PROJECT_LIVE_DEMO_URL" target="_blank" rel="noopener noreferrer" title="Opens in a new tab. Ensure the target site is fully responsive." class="text-amber-400 hover:text-amber-200 font-medium transition duration-200 flex items-center">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-7-5l5-5m0 0h-5m5 0v5"></path></svg>
-                        Live Demo
-                    </a>
-                    -->
-                </div>
-            </div>
-
-             <div class="bg-slate-800 p-6 rounded-xl shadow-lg transition duration-300 relative group border border-slate-700 card-hover"> 
-                
-                 <!-- NOTE: Project Image Placeholder REMOVED here per user request -->
-
-                <h3 class="text-xl font-bold text-cyan-400 mb-2">Browser-Fingerprinting</h3>
-                <p class="text-slate-400 mb-4">his Cybersecurity Awareness Tool captures device intelligence (IP, OS, screen size, battery status, platform) using JavaScript and APIs,  for educational purposes..</p>
-                <div class="mb-4 text-sm font-semibold text-slate-300">
-                    <span class="mr-3 text-cyan-500">Tools:</span> Python (Flask), HTML, CSS, JavaScript, Free APIs
-                </div>
-                <div class="mb-4">
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Cybersecurity</span>
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Awareness Tool</span>
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Backend</span>
-                </div>
-                 <!-- Links now below the text for better hierarchy -->
-                <div class="flex space-x-4 pt-2 border-t border-slate-700/50">
-                    <!-- IMPORTANT: Update GitHub Link -->
-                    <a href="https://github.com/maliVishal01/Browser-Fingerprinting" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-200 font-medium transition duration-200 flex items-center">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.742.082-.727.082-.727 1.205.086 1.838 1.235 1.838 1.235 1.07 1.835 2.809 1.305 3.498.998.108-.77.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.652.242 2.873.118 3.176.766.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.791 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                        GitHub Link
-                    </a>
-                    <!-- If you add a Live Demo link here, make sure to include target="_blank" and rel="noopener noreferrer" -->
-                    <!-- 
-                    <a href="YOUR_PROJECT_LIVE_DEMO_URL" target="_blank" rel="noopener noreferrer" title="Opens in a new tab. Ensure the target site is fully responsive." class="text-amber-400 hover:text-amber-200 font-medium transition duration-200 flex items-center">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-7-5l5-5m0 0h-5m5 0v5"></path></svg>
-                        Live Demo
-                    </a>
-                    -->
-                </div>
-            </div>
-
-             <div class="bg-slate-800 p-6 rounded-xl shadow-lg transition duration-300 relative group border border-slate-700 card-hover"> 
-                
-                 <!-- NOTE: Project Image Placeholder REMOVED here per user request -->
-
-                <h3 class="text-xl font-bold text-cyan-400 mb-2">Clickjacking Capture</h3>
-                <p class="text-slate-400 mb-4">This project is a sophisticated Cybersecurity Awareness Tool built using Flask and HTML/CSS/JavaScript. It demonstrates how malicious actors can use browser vulnerabilities <br/>
-                    (fingerprinting) and interface manipulation (clickjacking) to secretly gather user data and trigger unauthorized events.Implements a hidden camera frame positioned deceptively behind a visible button to simulate how a simple click can trigger an unwanted action, such as capturing a photo.</p>
-                <div class="mb-4 text-sm font-semibold text-slate-300">
-                    <span class="mr-3 text-cyan-500">Tools:</span>Python (Flask): Handles requests,HTML,CSS, data logging (JSON), and server-side processing
-                </div>
-                <div class="mb-4">
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Cybersecurity</span>
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">Awareness Tool</span>
-                    <span class="inline-block bg-amber-800/20 text-amber-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full border border-amber-500/50">HIDDEN CAMERA </span>
-                </div>
-                 <!-- Links now below the text for better hierarchy -->
-                <div class="flex space-x-4 pt-2 border-t border-slate-700/50">
-                    <!-- IMPORTANT: Update GitHub Link -->
-                    <a href="https://github.com/maliVishal01/ClickJacking-CyberSecurity" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-200 font-medium transition duration-200 flex items-center">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.742.082-.727.082-.727 1.205.086 1.838 1.235 1.838 1.235 1.07 1.835 2.809 1.305 3.498.998.108-.77.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.652.242 2.873.118 3.176.766.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.791 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                        GitHub Link
-                    </a>
-                    <!-- If you add a Live Demo link here, make sure to include target="_blank" and rel="noopener noreferrer" -->
-                    <!-- 
-                    <a href="YOUR_PROJECT_LIVE_DEMO_URL" target="_blank" rel="noopener noreferrer" title="Opens in a new tab. Ensure the target site is fully responsive." class="text-amber-400 hover:text-amber-200 font-medium transition duration-200 flex items-center">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-7-5l5-5m0 0h-5m5 0v5"></path></svg>
-                        Live Demo
-                    </a>
-                    -->
-                </div>
-            </div>
-
-             
-                    <!-- If you add a Live Demo link here, make sure to include target="_blank" and rel="noopener noreferrer" -->
-                    <!-- 
-                    <a href="YOUR_PROJECT_LIVE_DEMO_URL" target="_blank" rel="noopener noreferrer" title="Opens in a new tab. Ensure the target site is fully responsive." class="text-amber-400 hover:text-amber-200 font-medium transition duration-200 flex items-center">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-7-5l5-5m0 0h-5m5 0v5"></path></svg>
-                        Live Demo
-                    </a>
-                    -->
-                </div>
-            </div>
-
-            <!-- Add more static projects here as needed by duplicating the block above -->
-
-        </div>
-       <!-- <p class="text-center mt-8 text-slate-500 text-sm">This is a static representation of your best work. Update the content, links, and project images in the HTML file directly.</p>
-    -->
-    </section>
-
-    <!-- 6. CERTIFICATIONS SECTION (Static Content with Google Drive Link Option) -->
-    <section id="certifications" class="mb-12 p-8 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
-        <h2 class="text-4xl font-extrabold section-header text-slate-50 mb-8 border-b-4 border-amber-400/50 pb-2">Certifications & Workshops </h2>
-        <ul id="certification-list" class="space-y-2 relative">
-            
-            <!-- Certification Item 1: (Edit Content Below - **Crucially, update the Google Drive Link**) -->
-          <li class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 border-b border-slate-700 relative group card-hover transition duration-300 hover:bg-slate-700/30 rounded-lg px-2">
-                <div class="text-slate-200 mb-1 sm:mb-0">
-                    <span class="font-semibold text-cyan-400">Internship Certificate</span>
-                    <span class="text-sm text-slate-400 ml-2">(Lintel)</span>
-                </div>
-                <!-- IMPORTANT: Replace #GOOGLE_DRIVE_LINK_1 with your actual public Google Drive link -->
-                <a href="https://drive.google.com/file/d/1pa8Ps6tEKyeK0mszfzwB3mQFTG_OKhBj/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-200 text-sm flex items-center transition duration-200 font-medium">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
-                    Google Drive Link
-                </a>
-            </li>
-
-             <li class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 border-b border-slate-700 relative group card-hover transition duration-300 hover:bg-slate-700/30 rounded-lg px-2">
-                <div class="text-slate-200 mb-1 sm:mb-0">
-                    <span class="font-semibold text-cyan-400">Github For Devops Workshop </span>
-                    <span class="text-sm text-slate-400 ml-2">(TWS)</span>
-                </div>
-                <!-- IMPORTANT: Replace #GOOGLE_DRIVE_LINK_1 with your actual public Google Drive link -->
-                <a href="https://drive.google.com/file/d/1Ma3fUGGAcnrdsZwfHXdVKzZ_KKd_T5xD/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-200 text-sm flex items-center transition duration-200 font-medium">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
-                    Google Drive Link
-                </a>
-            </li>
-
-            <li class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 border-b border-slate-700 relative group card-hover transition duration-300 hover:bg-slate-700/30 rounded-lg px-2">
-                <div class="text-slate-200 mb-1 sm:mb-0">
-                    <span class="font-semibold text-cyan-400">AWS Zero To Zero </span>
-                    <span class="text-sm text-slate-400 ml-2">(TWS)</span>
-                </div>
-                <!-- IMPORTANT: Replace #GOOGLE_DRIVE_LINK_1 with your actual public Google Drive link -->
-                <a href="https://drive.google.com/file/d/168VnuOQPbQd8OGuS3t7YDp52eovm0WAL/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-200 text-sm flex items-center transition duration-200 font-medium">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
-                    Google Drive Link
-                </a>
-            </li>
-
-            <li class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 border-b border-slate-700 relative group card-hover transition duration-300 hover:bg-slate-700/30 rounded-lg px-2">
-                <div class="text-slate-200 mb-1 sm:mb-0">
-                    <span class="font-semibold text-cyan-400">Oracle Cloud Infrastructure 2025 - Data Science Professional </span>
-                    <span class="text-sm text-slate-400 ml-2">(Oracle)</span>
-                </div>
-                <!-- IMPORTANT: Replace #GOOGLE_DRIVE_LINK_1 with your actual public Google Drive link -->
-                <a href="https://drive.google.com/file/d/1dypQ05bVXnQhDQlGtLmTfcoy577POJnv/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-200 text-sm flex items-center transition duration-200 font-medium">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
-                    Google Drive Link
-                </a>
-            </li>
-
-            <!-- Certification Item 2: (Edit Content Below - **Crucially, update the Google Drive Link**) -->
-            <li class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 border-b border-slate-700 relative group card-hover transition duration-300 hover:bg-slate-700/30 rounded-lg px-2">
-                <div class="text-slate-200 mb-1 sm:mb-0">
-                    <span class="font-semibold text-cyan-400">Oracle Analytics Cloud 2025 - Certified Professional</span>
-                    <span class="text-sm text-slate-400 ml-2">(Oracle)</span>
-                </div>
-                <!-- IMPORTANT: Replace #GOOGLE_DRIVE_LINK_2 with your actual public Google Drive link -->
-                <a href="https://drive.google.com/file/d/1HKzWdz6eFLxygPiG-N-PgaqooCI1tea9/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-200 text-sm flex items-center transition duration-200 font-medium">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
-                    Google Drive Link
-                </a>
-            </li>
-            
-             <li class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 border-b border-slate-700 relative group card-hover transition duration-300 hover:bg-slate-700/30 rounded-lg px-2">
-                <div class="text-slate-200 mb-1 sm:mb-0">
-                    <span class="font-semibold text-cyan-400">Power BI Workshop</span>
-                    <span class="text-sm text-slate-400 ml-2">(Office Master)</span>
-                </div>
-                <!-- IMPORTANT: Replace #GOOGLE_DRIVE_LINK_2 with your actual public Google Drive link -->
-                <a href="https://drive.google.com/file/d/107xUUSfre3XLIMqcaj15OV94EkZRDDRG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-200 text-sm flex items-center transition duration-200 font-medium">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
-                    Google Drive Link
-                </a>
-            </li>
-
-             <li class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 border-b border-slate-700 relative group card-hover transition duration-300 hover:bg-slate-700/30 rounded-lg px-2">
-                <div class="text-slate-200 mb-1 sm:mb-0">
-                    <span class="font-semibold text-cyan-400">Python 101 for Data Science</span>
-                    <span class="text-sm text-slate-400 ml-2">(IBM)</span>
-                </div>
-                <!-- IMPORTANT: Replace #GOOGLE_DRIVE_LINK_2 with your actual public Google Drive link -->
-                <a href="https://drive.google.com/file/d/1cTnSaUWBMlXwamDjcijKIFiBKJV5V8_3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-200 text-sm flex items-center transition duration-200 font-medium">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
-                    Google Drive Link
-                </a>
-            </li>
-
-            <li class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 border-b border-slate-700 relative group card-hover transition duration-300 hover:bg-slate-700/30 rounded-lg px-2">
-                <div class="text-slate-200 mb-1 sm:mb-0">
-                    <span class="font-semibold text-cyan-400">Build RAG Chatbot with Python</span>
-                    <span class="text-sm text-slate-400 ml-2">(Let's Upgrade)</span>
-                </div>
-                <!-- IMPORTANT: Replace #GOOGLE_DRIVE_LINK_2 with your actual public Google Drive link -->
-                <a href="https://drive.google.com/file/d/1wlELRebrd-1B4_zQOTAb4OSxkVu29n5r/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-200 text-sm flex items-center transition duration-200 font-medium">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
-                    Google Drive Link
-                </a>
-            </li>
-
-             <li class="flex flex-col sm:flex-row justify-between items-start sm:items-center py-3 border-b border-slate-700 relative group card-hover transition duration-300 hover:bg-slate-700/30 rounded-lg px-2">
-                <div class="text-slate-200 mb-1 sm:mb-0">
-                    <span class="font-semibold text-cyan-400">Space & Technology Awareness Training</span>
-                    <span class="text-sm text-slate-400 ml-2">(ISRO)</span>
-                </div>
-                <!-- IMPORTANT: Replace #GOOGLE_DRIVE_LINK_2 with your actual public Google Drive link -->
-                <a href="https://drive.google.com/file/d/1M8gmgSUk7NGKz0K1HcMnGVNRLMKfFt_x/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-200 text-sm flex items-center transition duration-200 font-medium">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
-                    Google Drive Link
-                </a>
-            </li>
-            <!-- Add more static certifications here by duplicating the list item above -->
-
-        </ul>
-       <!-- <p class="text-center mt-6 text-slate-500 text-sm">To link your certificate, upload the PDF to Google Drive, share it publicly, and paste the shareable link into the `href` attribute of the corresponding "Google Drive Link" button.</p>
-    -->
-    </section>
-
-    <!-- 7. CONTACT SECTION (Redesigned as a Card) -->
-    <section id="contact" class="mb-12 p-8 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
-        <h2 class="text-4xl font-extrabold section-header text-slate-50 mb-8 border-b-4 border-amber-400/50 pb-2">Contact Us</h2>
-        <div class="text-center">
-            <h3 class="text-3xl font-bold text-slate-50 mb-4">Let's Connect & Build</h3>
-           <p class="text-slate-400 mb-8 max-w-2xl mx-auto">
-             <!--    I am actively seeking entry-level Data Analyst or IT/Python Developer roles and am ready for a new challenge. Feel free to reach out via email or phone to discuss potential opportunities.</p>
-        -->
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <!-- IMPORTANT: Update Email link -->
-                <a href="mailto:Malivishal28711@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-primary text-slate-900 px-8 py-3 rounded-xl font-semibold shadow-lg shadow-cyan-500/30 text-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                    Email Me: Malivishal28711@gmail.com
-                </a>
-                
-                <div class="flex flex-col space-y-1 text-sm justify-center">
-                    <p class="font-semibold text-slate-300">Location: <span class="text-cyan-400">Deesa, Gujarat, India</span></p>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
+<!-- ============ 8. CONTACT ============ -->
+<section id="contact" class="rv"><h2>Contact</h2><div class="card contact"><h3>Let's Connect &amp; Build</h3>
+  <p class="mut" style="margin-bottom:20px">Open to DevOps, Python, Software, Data and IT roles. Let’s connect and build something useful.</p>
+  <div class="row contact-links"><a class="btn social email" href="mailto:Malivishal28711@gmail.com"><span class="social-icon" aria-hidden="true">✉</span><span>Email</span></a>
+  <a class="btn social linkedin" href="https://www.linkedin.com/in/mali-vishal-devops" target="_blank" rel="me noopener noreferrer"><span class="social-icon" aria-hidden="true">in</span><span>LinkedIn</span></a>
+  <a class="btn social github" href="https://github.com/maliVishal01" target="_blank" rel="me noopener noreferrer"><span class="social-icon" aria-hidden="true">⌘</span><span>GitHub</span></a></div>
+  <p class="mut" style="margin-top:18px">Location: <b style="color:var(--c1)">Ahmedabad, Gujarat, India</b></p></div></section>
 </main>
+<footer>&copy; <span id="yr"></span> Mali Vishalkumar | malivishal.in</footer>
+<button id="top" aria-label="Back to top">↑</button>
 
-<footer class="bg-slate-950 text-slate-500 p-4 mt-12 border-t border-cyan-900">
-    <div class="max-w-7xl mx-auto text-center text-sm">
-        <p>&copy; Mali Vishalkumar </p>
-    </div>
-</footer>
-
-<!-- JavaScript for Dropdown Menu and Smooth Scroll Functionality -->
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const dropdownButton = document.getElementById('resume-dropdown-btn');
-        const dropdownMenu = document.getElementById('resume-dropdown-menu');
-        const dropdownArrow = document.getElementById('resume-dropdown-arrow');
-        const headerOffset = 72; // Header height in pixels (h-16 is 64px, plus border/shadow)
-        const navLinks = document.querySelectorAll('#main-nav a');
+/* =====================================================================
+   EDIT HERE: everything you will update later lives in these 4 lists.
+   To ADD an item: copy one line {...}, paste it below, change the text, keep the comma.
+   Google Drive: paste the normal share link; View + Download buttons are made automatically.
+   Leave link as "" if you do not have it yet (button shows as "link soon").
+   ===================================================================== */
+const ROLES=["DevOps Engineer","Python Developer","Data Analyst","Software Engineer"]; // typing animation
 
-        // --- Dropdown Toggle Logic ---
-        dropdownButton.addEventListener('click', () => {
-            dropdownMenu.classList.toggle('hidden');
-            dropdownArrow.classList.toggle('rotate-180');
-        });
+const RESUMES=[ // Google Drive share links; replace a link whenever you upload a newer resume.
+ {name:"DevOps Engineer Resume",link:"https://drive.google.com/file/d/1dXMmZLanyJgvo8Kr0z44-oGmKPJdKQ20/view?usp=sharing"},
+ {name:"Python Developer Resume",link:"https://drive.google.com/file/d/1PpCtNs4HW2KYGBzNeO9aDZBEMlMLt3CW/view?usp=sharing"},
+ {name:"Software Engineer Resume",link:""},
+ {name:"Data Analyst Resume",link:"https://drive.google.com/file/d/1v_4CWaUfltLu9k6cRTzlmoTbZFXUqVMs/view?usp=drive_link"},
+ {name:"IT / QA / General Resume",link:"https://drive.google.com/file/d/1UYsNJAOXr_UcnYrPA23Z8zjPp0-BJLwy/view?usp=drive_link"}
+];
 
-        // Hide the dropdown if the user clicks outside of it
-        document.addEventListener('click', (event) => {
-            if (dropdownMenu && !dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
-                dropdownMenu.classList.add('hidden');
-                dropdownArrow.classList.remove('rotate-180');
-            }
-        });
-        
-        // --- Smooth Scroll/Offset Logic ---
-        // This JS function ensures compatibility for browsers that might ignore scroll-margin-top
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                // Check if the link is an internal hash link
-                if (this.hash !== "") {
-                    // Temporarily prevent the browser's default jump behavior
-                    e.preventDefault();
-                    
-                    const targetId = this.hash;
-                    const targetElement = document.querySelector(targetId);
-                    
-                    if (targetElement) {
-                        // Calculate the target position: element's distance from the top of the viewport 
-                        // plus the current scroll position, minus the required header clearance.
-                        const scrollTarget = targetElement.offsetTop - headerOffset;
-                        
-                        // Scroll to the calculated position with smooth behavior
-                        window.scrollTo({
-                            top: scrollTarget,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-    });
+const PROJECTS=[ // cat = devops | python | data | security   (used by the filter buttons)
+ {t:"DevOps CI/CD Zomato Clone Deployment",cat:"devops",d:"Designed and implemented a complete DevOps CI/CD pipeline to automate the deployment of a Zomato clone application. The workflow includes code integration, quality analysis, containerization, security scanning, and deployment on AWS EC2. Automated pipeline: Code push → SonarCloud scan → Docker build → Trivy scan → EC2 deployment.",tools:"GitHub, GitHub Actions, Jenkins, Docker, Trivy, SonarCloud, AWS EC2",tags:["DevOps","CI/CD","Docker"],gh:"https://github.com/maliVishal01/devops-zomato-cicd-project"},
+ {t:"DevOps CI/CD - Gym Management System (3-Tier)",cat:"devops",d:"Implemented a 3-tier Gym Management System (HTML/CSS presentation layer, Django application layer, SQL database layer) using DevOps practices. Built a CI/CD pipeline with GitHub Actions to automate build, testing, and deployment. Containerized the application using Docker and deployed on AWS EC2 for scalable and reliable hosting.",tools:"GitHub Actions, Docker, AWS EC2, Django, Linux",tags:["DevOps","Automation","Cloud"],gh:"https://github.com/maliVishal01/gym-management-devops"},
+ {t:"Netflix Clone - AWS DevOps Pipeline",cat:"devops",d:"Designed a full DevOps pipeline using AWS CodePipeline and CodeBuild, containerized a multi-service app with Docker Compose behind an Application Load Balancer, with Prometheus and Grafana monitoring, SonarQube code analysis and Trivy security scanning.",tools:"AWS CodePipeline, CodeBuild, Docker, Prometheus, Grafana, SonarQube, Trivy",tags:["DevOps","AWS","Monitoring"],gh:""},
+ {t:"FinTrack CI/CD Pipeline",cat:"devops",d:"Built an end-to-end CI/CD pipeline for a Spring Boot application using GitHub Actions with images stored in AWS ECR. Webhook-based continuous deployment with Node.js and PM2: Code push → Build → Docker → ECR → Auto deploy on EC2. Solved real issues such as AWS region mismatch and deployment failures.",tools:"GitHub Actions, Docker, AWS ECR, EC2, Node.js, PM2",tags:["DevOps","CI/CD","AWS"],gh:""},
+ {t:"AWS DevOps - Static Website Hosting",cat:"devops",d:"Deployed a static website using AWS S3 and CloudFront CDN with full DevOps practices. Implemented version control using GitHub, enabled S3 versioning for backup, and configured CloudFront for global content delivery. Monitored performance using AWS CloudWatch.",tools:"AWS S3, CloudFront, CloudWatch, GitHub",tags:["AWS","Cloud","Hosting"],gh:"https://github.com/maliVishal01/devops-static-website"},
+ {t:"Brijesh Fitness - Gym Management Platform",cat:"python",d:"A full-stack web application built with Python (Django/Flask) to automate gym operations, manage memberships, track attendance, and provide interactive dashboards for admins and members.",tools:"Python, Django, HTML, CSS, SQLite",tags:["Backend","Full-Stack","Web App"],gh:"https://github.com/maliVishal01/Brijesh-s-Fitness"},
+ {t:"Fast Moving - Courier Management System",cat:"python",d:"A full-stack application designed to streamline and automate courier logistics and operations. It features user authentication, real-time tracking, and comprehensive administrative control over staff and packages. It reduces manual tracking by automating the process from pickup to delivery.",tools:"Python, Django/Flask, HTML, CSS, SQL/MySQL/SQLite",tags:["Full-Stack","Web App","Courier Operations"],gh:"https://github.com/maliVishal01/fast-moving-cms"},
+ {t:"Browser Fingerprinting",cat:"security",d:"This Cybersecurity Awareness Tool captures device intelligence (IP, OS, screen size, battery status, platform) using JavaScript and APIs, for educational purposes.",tools:"Python (Flask), HTML, CSS, JavaScript, Free APIs",tags:["Cybersecurity","Awareness Tool","Backend"],gh:"https://github.com/maliVishal01/Browser-Fingerprinting"},
+ {t:"Clickjacking Capture",cat:"security",d:"A Cybersecurity Awareness Tool built using Flask and HTML/CSS/JavaScript. It demonstrates how malicious actors can use browser vulnerabilities (fingerprinting) and interface manipulation (clickjacking) to secretly gather user data and trigger unauthorized events. Implements a hidden camera frame positioned deceptively behind a visible button to simulate how a simple click can trigger an unwanted action, such as capturing a photo.",tools:"Python (Flask), HTML, CSS, JSON data logging",tags:["Cybersecurity","Awareness Tool","Hidden Camera"],gh:"https://github.com/maliVishal01/ClickJacking-CyberSecurity"},
+ {t:"Personal Portfolio Website — malivishal.in",cat:"devops",d:"Designed, built and published this personal portfolio website. The source code is maintained in GitHub, GitHub Actions automates the deployment workflow, and the domain and DNS records are configured through GoDaddy.",tools:"HTML, CSS, JavaScript, GitHub, GitHub Actions, GoDaddy DNS",tags:["Personal Project","CI/CD","Web Hosting","GoDaddy"],gh:"https://github.com/maliVishal01"},
+];
+
+const CERTS=[ // Google Drive share links; set link to "" until a certificate is uploaded.
+ {n:"Internship Certificate",by:"Lintel",link:"https://drive.google.com/file/d/1pa8Ps6tEKyeK0mszfzwB3mQFTG_OKhBj/view?usp=drive_link",id:"intern"},
+ {n:"GitHub For DevOps Workshop",by:"TWS",link:"https://drive.google.com/file/d/1Ma3fUGGAcnrdsZwfHXdVKzZ_KKd_T5xD/view?usp=drive_link"},
+ {n:"AWS Zero To Zero",by:"TWS",link:"https://drive.google.com/file/d/168VnuOQPbQd8OGuS3t7YDp52eovm0WAL/view?usp=drive_link"},
+ {n:"Oracle Cloud Infrastructure 2025 - Data Science Professional",by:"Oracle",link:"https://drive.google.com/file/d/1dypQ05bVXnQhDQlGtLmTfcoy577POJnv/view?usp=drive_link"},
+ {n:"Oracle Analytics Cloud 2025 - Certified Professional",by:"Oracle",link:"https://drive.google.com/file/d/1HKzWdz6eFLxygPiG-N-PgaqooCI1tea9/view?usp=sharing"},
+ {n:"Power BI Workshop",by:"Office Master",link:"https://drive.google.com/file/d/107xUUSfre3XLIMqcaj15OV94EkZRDDRG/view?usp=sharing"},
+ {n:"Python 101 for Data Science",by:"IBM",link:"https://drive.google.com/file/d/1cTnSaUWBMlXwamDjcijKIFiBKJV5V8_3/view?usp=sharing"},
+ {n:"Build RAG Chatbot with Python",by:"Let's Upgrade",link:"https://drive.google.com/file/d/1wlELRebrd-1B4_zQOTAb4OSxkVu29n5r/view?usp=sharing"},
+ {n:"Space & Technology Awareness Training",by:"ISRO",link:"https://drive.google.com/file/d/1M8gmgSUk7NGKz0K1HcMnGVNRLMKfFt_x/view?usp=drive_link"},
+ {n:"CCNA Course",by:"Udemy",link:""},
+ {n:"Learn Python with 20+ Projects",by:"Udemy",link:""},
+ {n:"Cybersecurity Job Simulation",by:"FORGE",link:""}
+];
+/* ===================== END OF EDIT AREA =====================
+   Resumes and certificates are opened from Google Drive share links.
+   Set each Google Drive file to: Anyone with the link - Viewer.
+   Profile photo uses the original hosted image URL in the hero section.
+   To use a Google Drive photo, replace that img src with:
+   https://drive.google.com/uc?export=view&id=YOUR_FILE_ID
+   Keep the existing GitHub Actions workflow and GoDaddy DNS settings.
+   =============================================================== */
+
+const $=(s,e=document)=>e.querySelector(s),$$=(s,e=document)=>[...e.querySelectorAll(s)];
+const dl=u=>{const m=(u||"").match(/\/d\/([^/]+)/);return m?""+m[1]:""};
+const links=(u,n="Open")=>u?`<span><a class="name-link" href="${u}" target="_blank" rel="noopener noreferrer" aria-label="Open ${esc(n)}">${esc(n)} ↗</a></span>`:`<span class="mut" style="font-size:.75rem">Certificate file not added yet</span>`;
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+
+/* ==========================================================
+   RESUME SECTION
+   Resume files are opened and downloaded using their Google Drive share links.
+   ========================================================== */
+const resumeList=$("#resume-list");
+const driveFileId=u=>{const m=(u||"").match(/\/d\/([^/?]+)/)|| (u||"").match(/[?&]id=([^&]+)/);return m?m[1]:""};
+const driveDownload=u=>{const id=driveFileId(u);return id?`https://drive.google.com/uc?export=download&id=${id}`:u};
+resumeList.innerHTML=RESUMES.map(item=>`
+  <div class="resume-row">
+    <div class="resume-details">
+      <span class="resume-name">${esc(item.name)}</span>
+      <span class="resume-format">PDF document · Google Drive</span>
+    </div>
+    <div class="resume-actions" style="display:flex;gap:8px;flex-wrap:wrap">
+      ${item.link?`<a class="resume-open" href="${item.link}" target="_blank" rel="noopener noreferrer">View Resume ↗</a><a class="resume-open" href="${driveDownload(item.link)}" target="_blank" rel="noopener noreferrer">Download ↓</a>`:`<span class="mut" style="font-size:.8rem">Resume link coming soon</span>`}
+    </div>
+  </div>`).join("");
+
+/* projects + filter *//* projects + filter */
+const cats=["all",...new Set(PROJECTS.map(p=>p.cat))];
+$("#filters").innerHTML=cats.map((c,i)=>`<button class="fb ${i?"":"on"}" data-c="${c}">${c==="all"?"All":c[0].toUpperCase()+c.slice(1)}</button>`).join("");
+function drawProjects(c){$("#project-list").innerHTML=PROJECTS.filter(p=>c==="all"||p.cat===c).map(p=>`<article class="card"><h3>${esc(p.t)}</h3><p class="mut" style="margin:8px 0">${esc(p.d)}</p><p style="font-size:.85rem"><b style="color:var(--c1)">Tools:</b> ${esc(p.tools)}</p><div style="margin-top:8px">${p.tags.map(t=>`<span class="chip">${esc(t)}</span>`).join("")}</div>${p.gh?`<a class="lnk" href="${p.gh}" target="_blank" rel="noopener noreferrer">GitHub Link ↗</a>`:`<span class="mut" style="font-size:.8rem;display:block;margin-top:10px">GitHub link soon</span>`}</article>`).join("")}
+$$(".fb").forEach(b=>b.onclick=()=>{$$(".fb").forEach(x=>x.classList.remove("on"));b.classList.add("on");drawProjects(b.dataset.c)});drawProjects("all");
+
+/* certificates: open the Google Drive share link */
+$("#cert-list").innerHTML=CERTS.map(c=>`<article class="card cert"><div class="cert-info"><h3>${esc(c.n)}</h3><p>Issued by ${esc(c.by)}</p></div><div class="cert-action">${links(c.link,"View Certificate")}</div></article>`).join("");
+const internshipCert=CERTS.find(c=>c.id==="intern");
+if(internshipCert&&internshipCert.link)$("#intern-cert").href=internshipCert.link;
+
+/* typing animation */
+(function(){const t=$("#typed");let i=0,j=0,del=false;(function tick(){const w=ROLES[i];t.textContent=w.slice(0,j);
+ if(!del&&j===w.length){del=true;return setTimeout(tick,1400)}if(del&&j===0){del=false;i=(i+1)%ROLES.length}j+=del?-1:1;setTimeout(tick,del?45:90)})()})();
+
+/* scroll: progress bar, back-to-top, reveal, counters, skill bars, active nav */
+const bar=$("#bar"),top_=$("#top");
+addEventListener("scroll",()=>{const h=document.documentElement,p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;bar.style.width=p+"%";top_.classList.toggle("show",h.scrollTop>500)},{passive:true});
+top_.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");$$(".f",e.target).forEach(f=>f.style.width=f.dataset.v+"%");io.unobserve(e.target)}}),{threshold:.12});
+$$(".rv").forEach(e=>io.observe(e));
+$$("[data-n]").forEach(el=>{const n=+el.dataset.n;let c=0;const s=setInterval(()=>{c++;el.textContent=c+"+";if(c>=n){el.textContent=n+"+";clearInterval(s)}},90)});
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$("nav a.l").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
+$$("section[id]").forEach(s=>so.observe(s));
+
+/* mobile menu */
+$("#burger").onclick=()=>$("#menu-links").classList.toggle("open");$$("#menu-links a.l").forEach(a=>a.onclick=()=>$("#menu-links").classList.remove("open"));
+$("#yr").textContent=new Date().getFullYear();
 </script>
-
 </body>
 </html>
