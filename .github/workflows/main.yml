@@ -22,17 +22,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v6
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload Website Files
+      - name: Upload Portfolio Files
         uses: actions/upload-pages-artifact@v4
         with:
           path: .
 
       - name: Deploy Portfolio
-        id: deployment
         uses: actions/deploy-pages@v4
