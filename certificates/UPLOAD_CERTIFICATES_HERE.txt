@@ -1,0 +1,8 @@
+Upload each certificate here as PDF, JPG, JPEG or PNG (one file per certificate).
+Keep these exact names (extension can be any of the four):
+internship-lintel, github-devops-workshop, aws-zero-to-zero,
+oracle-data-science-professional, oracle-analytics-cloud-professional,
+power-bi-workshop, python-101-ibm, rag-chatbot-python,
+isro-space-technology-training, ccna-udemy,
+python-20-projects-udemy, cybersecurity-forge
+To add a new one: add a line in the CERTS list in index.html and upload the file with that name.
