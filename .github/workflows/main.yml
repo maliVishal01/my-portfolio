@@ -21,6 +21,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v6
@@ -28,10 +32,19 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Validate Portfolio Files
+        run: |
+          test -f index.html
+          test -d assets
+          test -d resumes
+          test -d certificates
+          echo "Portfolio validation successful"
+
       - name: Upload Portfolio Files
         uses: actions/upload-pages-artifact@v4
         with:
           path: .
 
       - name: Deploy Portfolio
+        id: deployment
         uses: actions/deploy-pages@v4
